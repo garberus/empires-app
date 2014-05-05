@@ -39,4 +39,15 @@ describe('LineParser', function() {
 
   });
 
+  describe('parsing total score', function() {
+
+    var line = '593.	Henrik scored 57 pts this epoch. Total: 183';
+
+    it('should return the total score', function() {
+      Parser.setLine(line);
+      expect(Parser.extractPlayerTotalPoints()).toBe('183');
+    });
+
+  });
+
 });
