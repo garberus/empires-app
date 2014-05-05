@@ -3,7 +3,7 @@
 'use strict';
 
 var expect = require('expectacle');
-var Parser = require('../src/lineparser.js').LineParser;
+var Parser = require('../logparser/src/lineparser.js').LineParser;
 
 describe('LineParser', function() {
 
