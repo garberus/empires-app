@@ -1,0 +1,603 @@
+[
+  {
+    "title":"Sumeria",
+    "name":"Sumerians",
+    "adjective":"Sumerian",
+    "units":4,
+    "leader":"En Men Barge Si",
+    "home":58,
+    "naval":[-1]
+  },
+  {
+    "title":"Egypt",
+    "name":"Egyptians",
+    "adjective":"Egyptian",
+    "units":5,
+    "leader":"Zoser",
+    "home":73,
+    "naval":[124,119]
+  },
+  {
+    "title":"The Minoans",
+    "name":"Minoans",
+    "adjective":"Minoan",
+    "units":3,
+    "leader":"Minos",
+    "home":29,
+    "naval":[119]
+  },
+  {
+    "title":"The Indus Valley Civilization",
+    "name":"IVC",
+    "adjective":"Harappan",
+    "units":4,
+    "leader":"unknown",
+    "home":56,
+    "naval":[-1]
+  },
+  {
+    "title":"Babylonia",
+    "name":"Babylonians",
+    "adjective":"Babylonian",
+    "units":4,
+    "leader":"Hammurabi",
+    "home":65,
+    "naval":[-1]
+  },
+  {
+    "title":"The Shang Dynasty",
+    "name":"Shang",
+    "adjective":"Shang",
+    "units":3,
+    "leader":"Ch'eng T'ang",
+    "home":112,
+    "naval":[-1]
+  },
+  {
+    "title":"The Aryans",
+    "name":"Aryans",
+    "adjective":"Aryan",
+    "units":5,
+    "leader":"Sudas",
+    "home":99,
+    "naval":[-1]
+  },
+  {
+    "title":"Assyria",
+    "name":"Assyrians",
+    "adjective":"Assyrian",
+    "units":8,
+    "leader":"Shalamaneser I",
+    "home":102,
+    "naval":[-1]
+  },
+  {
+    "title":"The Chou Dynasty",
+    "name":"Chou",
+    "adjective":"Chou",
+    "units":6,
+    "leader":"King Wen",
+    "home":109,
+    "naval":[-1]
+  },
+  {
+    "title":"The Vedic City States",
+    "name":"Vedic",
+    "adjective":"Vedic",
+    "units":6,
+    "leader":"Janaka",
+    "home":100,
+    "naval":[-1]
+  },
+  {
+    "title":"The Greek City States",
+    "name":"Greeks",
+    "adjective":"Greek",
+    "units":7,
+    "leader":"Pheidos of Argos",
+    "home":67,
+    "naval":[116,119,127]
+  },
+  {
+    "title":"The Scythians",
+    "name":"Scythians",
+    "adjective":"Scythian",
+    "units":7,
+    "leader":"Kashtariti",
+    "home":22,
+    "naval":[-1]
+  },
+  {
+    "title":"Carthaginia",
+    "name":"Carthaginians",
+    "adjective":"Carthaginian",
+    "units":7,
+    "leader":"Hasdrubal",
+    "home":90,
+    "naval":[119,127]
+  },
+  {
+    "title":"Persia",
+    "name":"Persians",
+    "adjective":"Persian",
+    "units":12,
+    "leader":"Darius the Great",
+    "home":81,
+    "naval":[124,116,119]
+  },
+  {
+    "title":"The Celts",
+    "name":"Celts",
+    "adjective":"Celtic",
+    "units":8,
+    "leader":"Ambigatus",
+    "home":25,
+    "naval":[-1]
+  },
+  {
+    "title":"Macedonia",
+    "name":"Macedonians",
+    "adjective":"Macedonian",
+    "units":14,
+    "leader":"Alexander the Great",
+    "home":82,
+    "naval":[124,116,119]
+  },
+  {
+    "title":"The Mauryan Dynasty",
+    "name":"Mauryans",
+    "adjective":"Mauryan",
+    "units":9,
+    "leader":"Asoka",
+    "home":42,
+    "naval":[-1]
+  },
+  {
+    "title":"The Han Dynasty",
+    "name":" Han",
+    "adjective":" Han",
+    "units":11,
+    "leader":"Wu-Ti",
+    "home":46,
+    "naval":[126]
+  },
+  {
+    "title":"The Hsiung-Nu",
+    "name":"Xiongnu",
+    "adjective":"Hsiung-Nu",
+    "units":5,
+    "leader":"Lao Shangi",
+    "home":66,
+    "naval":[-1]
+  },
+  {
+    "title":"The Romans",
+    "name":"Romans",
+    "adjective":"Roman",
+    "units":20,
+    "leader":"Julius Caesar",
+    "home":93,
+    "naval":[119,127]
+  },
+  {
+    "title":"The Sassanids",
+    "name":"Sassanids",
+    "adjective":"Sassanid",
+    "units":9,
+    "leader":"Ardashir I",
+    "home":113,
+    "naval":[-1]
+  },
+  {
+    "title":"The Guptas",
+    "name":"Guptas",
+    "adjective":"Guptan",
+    "units":8,
+    "leader":"Chandragupta",
+    "home":36,
+    "naval":[115]
+  },
+  {
+    "title":"The Goths",
+    "name":"Goths",
+    "adjective":"Gothic",
+    "units":10,
+    "leader":"Alaric",
+    "home":31,
+    "naval":[127]
+  },
+  {
+    "title":"The Huns",
+    "name":"Huns",
+    "adjective":" Hun",
+    "units":14,
+    "leader":"Attila",
+    "home":110,
+    "naval":[-1]
+  },
+  {
+    "title":"The Byzantines",
+    "name":"Byzantines",
+    "adjective":"Byzantine",
+    "units":11,
+    "leader":"Justinian I",
+    "home":19,
+    "naval":[116,119,127]
+  },
+  {
+    "title":"The T'ang Dynasty",
+    "name":"T'ang",
+    "adjective":"T'ang",
+    "units":10,
+    "leader":"T'ai-Tsung",
+    "home":111,
+    "naval":[126]
+  },
+  {
+    "title":"The Arabs",
+    "name":"Arabs",
+    "adjective":" Arab",
+    "units":15,
+    "leader":"Omar",
+    "home":17,
+    "naval":[124]
+  },
+  {
+    "title":"The Khmers",
+    "name":"Khmers",
+    "adjective":"Khmer",
+    "units":5,
+    "leader":"Jayavarman I",
+    "home":63,
+    "naval":[126]
+  },
+  {
+    "title":"The Franks",
+    "name":"Franks",
+    "adjective":"Frankish",
+    "units":9,
+    "leader":"Charlemagne",
+    "home":72,
+    "naval":[127]
+  },
+  {
+    "title":"The Vikings",
+    "name":"Vikings",
+    "adjective":"viking",
+    "units":7,
+    "leader":"Ragnar Lodbruk",
+    "home":88,
+    "naval":[122]
+  },
+  {
+    "title":"The Holy Roman Empire",
+    "name":"Germanic-Europeans",
+    "adjective":"Germanic",
+    "units":8,
+    "leader":"Otto the Great",
+    "home":25,
+    "naval":[-1]
+  },
+  {
+    "title":"The Chola Dynasty",
+    "name":"Tamil",
+    "adjective":"Chola",
+    "units":7,
+    "leader":"Rajaraja",
+    "home":37,
+    "naval":[115]
+  },
+  {
+    "title":"The Sung Dynasty",
+    "name":"Sung",
+    "adjective":"Sung",
+    "units":9,
+    "leader":"Shen-Tsung",
+    "home":89,
+    "naval":[126]
+  },
+  {
+    "title":"The Seljuk Turks",
+    "name":"Seljuks",
+    "adjective":"Turkic",
+    "units":12,
+    "leader":"Zengi",
+    "home":99,
+    "naval":[-1]
+  },
+  {
+    "title":"The Mongols",
+    "name":"Mongols",
+    "adjective":"Mongolian",
+    "units":18,
+    "leader":"Genghis Khan",
+    "home":66,
+    "naval":[-1]
+  },
+  {
+    "title":"The Ming Dynasty",
+    "name":"Ming",
+    "adjective":"Ming",
+    "units":9,
+    "leader":"Hung-Wu",
+    "home":27,
+    "naval":[126]
+  },
+  {
+    "title":"The Timurid Emirates",
+    "name":"Timurids",
+    "adjective":"Timurid",
+    "units":8,
+    "leader":"Tamerlane",
+    "home":99,
+    "naval":[-1]
+  },
+  {
+    "title":"The Incas/Aztecs",
+    "name":"Aztecs",
+    "adjective":"Aztec",
+    "units":2,
+    "leader":"Montezuma",
+    "home":64,
+    "naval":[-1]
+  },
+  {
+    "title":"The Ottoman Turks",
+    "name":"Ottoman Turks",
+    "adjective":"Ottoman",
+    "units":14,
+    "leader":"Mehmed II",
+    "home":103,
+    "naval":[124,116,119]
+  },
+  {
+    "title":"Portugal",
+    "name":"Portugese",
+    "adjective":"Portugese",
+    "units":8,
+    "leader":"Manuel I",
+    "home":108,
+    "naval":[114,121,128]
+  },
+  {
+    "title":"Spain",
+    "name":"Spaniards",
+    "adjective":"Spanish",
+    "units":12,
+    "leader":"Charles V",
+    "home":84,
+    "naval":[114,121,128]
+  },
+  {
+    "title":"The Mughals",
+    "name":"Mughals",
+    "adjective":"Mughal",
+    "units":10,
+    "leader":"Akbar",
+    "home":41,
+    "naval":[115]
+  },
+  {
+    "title":"Russia",
+    "name":"Russians",
+    "adjective":"Russian",
+    "units":10,
+    "leader":"Ivan the Terrible",
+    "home":70,
+    "naval":[116,125]
+  },
+  {
+    "title":"The Manchu Dynasty",
+    "name":"Manchu",
+    "adjective":"Manchu",
+    "units":11,
+    "leader":"K'ang Hsi",
+    "home":60,
+    "naval":[125,126]
+  },
+  {
+    "title":"Netherlands",
+    "name":"Dutch",
+    "adjective":"Dutch",
+    "units":6,
+    "leader":"William III",
+    "home":57,
+    "naval":[114,121]
+  },
+  {
+    "title":"France",
+    "name":"French",
+    "adjective":"French",
+    "units":11,
+    "leader":"Napoleon",
+    "home":106,
+    "naval":[122,114,121,128]
+  },
+  {
+    "title":"Britain",
+    "name":"British",
+    "adjective":"British",
+    "units":16,
+    "leader":"Victoria",
+    "home":13,
+    "naval":[122,114,121,128]
+  },
+  {
+    "title":"The United States",
+    "name":"Americans",
+    "adjective":"American",
+    "units":9,
+    "leader":"Grant",
+    "home":16,
+    "naval":[117,120,128]
+  },
+  {
+    "title":"Germany",
+    "name":"Germans",
+    "adjective":"German",
+    "units":10,
+    "leader":"Wilhelm II",
+    "home":20,
+    "naval":[114,121]
+  },
+  {
+    "title":"The Hittites",
+    "name":"Hittites",
+    "adjective":"Hittite",
+    "units":3,
+    "home":35,
+    "naval":[-1]
+  },
+  {
+    "title":"Phoenicia",
+    "name":"Phoenicians",
+    "adjective":"Punic",
+    "units":3,
+    "home":54,
+    "naval":[119,127]
+  },
+  {
+    "title":"The Maya",
+    "name":"Mayans",
+    "adjective":"Mayan",
+    "units":2,
+    "home":24,
+    "naval":[-1]
+  },
+  {
+    "title":"The Anglo-Saxons",
+    "name":"Anglo-Saxons",
+    "adjective":"Anglo-Saxon",
+    "units":3,
+    "home":20,
+    "naval":[123]
+  },
+  {
+    "title":"Fujiwara",
+    "name":"Fujiwarans",
+    "adjective":"Fujiwaran",
+    "units":3,
+    "home":51,
+    "naval":[125]
+  },
+  {
+    "title":"The Safavids",
+    "name":"Safavids",
+    "adjective":"Safavid",
+    "units":3,
+    "home":80,
+    "naval":[-1]
+  },
+  {
+    "title":"Japan",
+    "name":"Japanese",
+    "adjective":"Japanese",
+    "units":5,
+    "home":52,
+    "naval":[125]
+  },
+  {
+    "title":"Barbarians",
+    "name":"Barbarians",
+    "adjective":"Barbarian",
+    "units":10,
+    "home":14,
+    "naval":[-1]
+  },
+  {
+    "title":"Crusaders",
+    "name":"Crusaders",
+    "adjective":"Crusader",
+    "units":3,
+    "home":119,
+    "naval":[119]
+  },
+  {
+    "title":"Canaan",
+    "name":"Canaanites",
+    "adjective":"caananite",
+    "units":1,
+    "home":78,
+    "naval":[-1]
+  },
+  {
+    "title":"Etruscans",
+    "name":"Etruscans",
+    "adjective":"etruscan",
+    "units":1,
+    "home":74,
+    "naval":[-1]
+  },
+  {
+    "title":"Kush",
+    "name":"Kushites",
+    "adjective":"Kushite",
+    "units":1,
+    "home":101,
+    "naval":[-1]
+  },
+  {
+    "title":"Tiahuanaco",
+    "name":"Tiwanaku",
+    "adjective":"Tiwanakan",
+    "units":1,
+    "home":86,
+    "naval":[-1]
+  },
+  {
+    "title":"Mali",
+    "name":"Mandinka",
+    "adjective":"Mandinkan",
+    "units":1,
+    "home":43,
+    "naval":[-1]
+  },
+  {
+    "title":"Thai",
+    "name":"Thai",
+    "adjective":"Thai",
+    "units":1,
+    "home":62,
+    "naval":[-1]
+  },
+  {
+    "title":"Zimbabwe",
+    "name":"Rozwi",
+    "adjective":"Rozwi",
+    "units":1,
+    "home":34,
+    "naval":[-1]
+  },
+  {
+    "title":"Jewish Revolt",
+    "name":"Jewish Uprising",
+    "adjective":"Judaic",
+    "units":1,
+    "home":78,
+    "naval":[-1]
+  },
+  {
+    "title":"The Incas",
+    "name":"Incas",
+    "adjective":"Incan",
+    "units":2,
+    "leader":"Pachacuti Yupanqui",
+    "home":71,
+    "naval":[-1]
+  },
+  {
+    "title":"Australian Migrants",
+    "name":"Aborigines",
+    "adjective":"Aborigine"
+  },
+  {
+    "title":"African Migrants",
+    "name":"Africans",
+    "adjective":"African"
+  },
+  {
+    "title":"North American Migrants",
+    "name":"Native Americans",
+    "adjective":"Native American"
+  }
+]

@@ -1,0 +1,471 @@
+Strategidagis G1 Round 2
+Pontus
+Johan
+Jonas
+Gustav
+Henrik
+0.	Epoch 1 - 3000BC - Dawn of History
+1.	Johan was dealt Babylonia and gave it to Gustav.
+2.	Jonas was dealt The Minoans and kept it.
+3.	Gustav was dealt Egypt and gave it to Henrik.
+4.	Pontus was dealt Sumeria and gave it to Johan.
+5.	Henrik was dealt The Shang Dynasty and gave it to Pontus.
+6.	Johan plays Sumeria with the Engineering card.
+7.	Sumeria has appeared in Lower Tigris
+8.	Sumerians expand into Zagros
+9.	Sumerians expand into Upper Tigris
+10.	Sumerians expand into Levant
+11.	Sumeria has built a monument at Lower Tigris
+12.	Johan scored 9 pts this epoch. Total: 9
+14.	Henrik plays Egypt with the Population Explosion card.
+15.	Egypt has appeared in Nile Delta
+16.	Egyptians expand into Western Anatolia
+17.	Egyptians expand into Shatts Plateau
+18.	Egyptians expand into Southern Iberia
+19.	Egyptians expand into Nubia
+20.	Egypt has built a monument at Nile Delta
+21.	Henrik scored 9 pts this epoch. Total: 9
+23.	Jonas plays The Minoans with the Kingdom: Canaanites card.
+24.	The Kingdom of Canaan has appeared in Palestine.
+25.	The Minoans have appeared in Crete
+26.	Minoans expand into Libya
+27.	The Minoans have built no monuments.
+28.	Jonas scored 7 pts this epoch. Total: 7
+30.	Gustav plays Babylonia with the Engineering card.
+31.	Babylonia has appeared in Middle Tigris
+32.	The Babylonians were defeated in Lower Tigris by the Sumerians
+33.	The Babylonians and the Sumerians destroyed each other in Lower Tigris
+34.	The Babylonians defeated the Sumerians and occupied Lower Tigris
+35.	Babylonia has built no monuments.
+36.	Gustav scored 6 pts this epoch. Total: 6
+38.	Pontus plays The Shang Dynasty.
+39.	The Shang Dynasty has appeared in Yellow River
+40.	Shang expand into Yangtze Kiang
+41.	Shang expand into Chekiang
+42.	The Shang Dynasty has built no monuments.
+43.	Pontus scored 5 pts this epoch. Total: 5
+45.	Pontus was dealt Carthaginia and kept it.
+46.	Gustav was dealt Persia and kept it.
+47.	Jonas was dealt The Greek City States and gave it to Johan.
+48.	Johan was dealt The Chou Dynasty and gave it to Jonas.
+49.	Henrik was dealt The Scythians and kept it.
+50.	Jonas plays The Chou Dynasty.
+51.	The Chou Dynasty has appeared in Wei River
+52.	The Chou defeated the Shang and occupied Yellow River
+53.	Chou expand into Szechaun
+54.	The Chou Dynasty has built no monuments.
+55.	Jonas scored 17 pts this epoch. Total: 24
+57.	Johan plays The Greek City States with the Civil Service card and the Treachery card.
+58.	The Greek City States have appeared in Morea
+59.	 Crete was chosen for treachery.
+60.	Crete has fallen to treachery by Greeks
+61.	Greeks expand into Southern Italia
+62.	Greeks expand into Pyrenees
+63.	The Greeks defeated the Egyptians and occupied Southern Iberia
+64.	The Greeks and the Egyptians destroyed each other in Shatts Plateau
+65.	The Greek City States have built a monument at Morea
+66.	Johan scored 19 pts this epoch. Total: 28
+68.	Henrik plays The Scythians with the Population Explosion card.
+69.	The Scythians have appeared in Caucasus
+70.	Scythians expand into Dnieper
+71.	Scythians expand into Central Europe
+72.	Scythians expand into Northern Gaul
+73.	Scythians expand into Albion
+74.	Scythians expand into Massif
+75.	Scythians expand into Highlands
+76.	The Scythians have built a monument at Albion
+77.	Henrik scored 13 pts this epoch. Total: 22
+79.	Pontus plays Carthaginia with the Astronomy card.
+80.	Carthaginia has appeared in Shatts Plateau
+81.	Astronomy: A fleet appeared in Black Sea.
+82.	Carthaginians expand into East Anatolia
+83.	Carthaginians expand into Balkans
+84.	The Carthaginians were defeated in Zagros by the Sumerians
+85.	The Carthaginians were defeated in Zagros by the Sumerians
+86.	The Carthaginians defeated the Sumerians.
+87.	The Carthaginians defeated the Sumerians and occupied Zagros
+88.	Carthaginians expand into Persian Plateau
+89.	Carthaginia has built no monuments.
+90.	Pontus scored 14 pts this epoch. Total: 19
+92.	Gustav plays Persia with the Kingdom: Etruscans card and the Minor Empire: Phoenicia card.
+93.	The Kingdom of Etruscans has appeared in Northern Italia.
+94.	Phoenicia has appeared in Levant
+95.	The Phoenicians and the Canaanites destroyed each other in Palestine
+96.	Persia has appeared in Persian Plateau
+97.	Persians expand into Hindu Kush
+98.	Persians expand into Turanian Plain
+99.	Persians expand into Tarim Basin
+100.	Persians expand into Upper Indus
+101.	Persians expand into Western Deccan
+102.	Persians expand into Eastern Ghats
+103.	Persians expand into Ceylon
+104.	The Persians defeated the Carthaginians and occupied Zagros
+105.	Persians expand into Eastern Deccan
+106.	Persia has built a monument at Persian Plateau and a monument at Eastern Ghats
+107.	Gustav scored 28 pts this epoch. Total: 34
+109.	Pontus was dealt The Hsiung-Nu and gave it to Gustav.
+110.	Henrik was dealt The Mauryan Dynasty and gave it to Pontus.
+111.	Jonas was dealt Macedonia and kept it.
+112.	Johan was dealt The Celts and kept it.
+113.	Gustav was dealt The Sassanids and gave it to Henrik.
+114.	Johan plays The Celts with the Expert Troops: Straits card.
+115.	The Celts have appeared in Central Europe
+116.	The Celts defeated the Scythians and occupied Northern Gaul
+117.	The Celts and the Scythians destroyed each other in Albion
+118.	The Celts and the Scythians destroyed each other in Albion
+119.	The Celts were defeated in Highlands by the Scythians
+120.	The Celts defeated the Scythians and occupied Dnieper
+121.	The Celts have built a monument at Central Europe
+122.	Johan scored 18 pts this epoch. Total: 46
+124.	Jonas plays Macedonia with the Minor Empire: Mayans card and the Civil Service card.
+125.	The Maya has appeared in Central America
+126.	Macedonia has appeared in Pindus
+127.	The Macedonians defeated the Greeks.
+128.	The Macedonians defeated the Greeks and occupied Morea
+129.	The Macedonians and the Greeks destroyed each other in Crete
+130.	The Macedonians defeated the Greeks and occupied Crete
+131.	Macedonians expand into Dalmatia
+132.	The Macedonians were defeated in Palestine by the Phoenicians
+133.	The Macedonians were defeated in Palestine by the Phoenicians
+134.	The Macedonians defeated the Phoenicians and occupied Palestine
+135.	Macedonians expand into Arabian Peninsula
+136.	Macedonians expand into Upper Nile
+137.	The Macedonians and the Egyptians destroyed each other in Nubia
+138.	Macedonia has built no monuments.
+139.	Jonas scored 29 pts this epoch. Total: 53
+141.	Pontus plays The Mauryan Dynasty with the Plague card and the Population Explosion card.
+142.	Plague has struck Western Deccan
+143.	Plague has struck Western Deccan
+144.	Plague has struck Eastern Ghats
+145.	The Mauryan Dynasty has appeared in Ganges Delta
+146.	Mauryans expand into Malayan Peninsula
+147.	Mauryans expand into Ganges Valley
+148.	The Mauryans defeated the Persians and occupied Upper Indus
+149.	Mauryans expand into Lower Indus
+150.	Mauryans expand into Persian Salt Desert
+151.	Mauryans expand into Western Deccan
+152.	Mauryans expand into Irawaddy
+153.	Mauryans expand into Mekong
+154.	The Mauryan Dynasty has built a monument at Ganges Delta
+155.	Pontus scored 25 pts this epoch. Total: 44
+157.	Gustav plays The Hsiung-Nu with the Disaster card and the Allies card.
+158.	Volcano erupts in Nile Delta. Earthquake strikes Ganges Delta
+159.	The Hsiung-Nu has appeared in Mongolia
+160.	Xiongnu expand into Eastern Steppe
+161.	Xiongnu expand into Northern European Plain
+162.	Xiongnu expand into Baltic Seaboard
+163.	The Xiongnu were defeated in Central Europe by the Celts
+164.	The Xiongnu were defeated in Central Europe by the Celts
+165.	The Xiongnu were defeated in Central Europe by the Celts
+166.	The Hsiung-Nu has built no monuments.
+167.	Gustav scored 27 pts this epoch. Total: 61
+169.	Henrik plays The Sassanids with the Elite Troops card.
+170.	The Sassanids have appeared in Zagros
+171.	The Sassanids defeated the Persians and occupied Persian Plateau
+172.	The Sassanids defeated the Babylonians.
+173.	The Sassanids defeated the Babylonians and occupied Middle Tigris
+174.	The Sassanids were defeated in Lower Tigris by the Babylonians
+175.	The Sassanids defeated the Babylonians.
+176.	The Sassanids were defeated in Lower Tigris by the Babylonians
+177.	The Sassanids were defeated in Lower Tigris by the Babylonians
+178.	The Sassanids defeated the Babylonians and occupied Lower Tigris
+179.	The Sassanids defeated the Persians and occupied Hindu Kush
+180.	The Sassanids have built no monuments.
+181.	Henrik scored 22 pts this epoch. Total: 44
+183.	Pontus was dealt The Khmers and gave it to Gustav.
+184.	Henrik was dealt The T'ang Dynasty and kept it.
+185.	Johan was dealt The Huns and kept it.
+186.	Jonas was dealt The Arabs and kept it.
+187.	Gustav was dealt The Guptas and gave it to Pontus.
+188.	Pontus plays The Guptas with the Barbarians card.
+189.	Barbarians have appeared in Alps
+190.	The Barbarians and the Celts destroyed each other in Northern Gaul
+191.	The Guptas have appeared in Eastern Deccan
+192.	The Guptas defeated the Persians and occupied Eastern Ghats
+193.	The Guptas and the Persians destroyed each other in Ceylon
+194.	The Guptas and the Persians destroyed each other in Ceylon
+195.	Guptas expand into Sumatra
+196.	Guptas expand into Western Ghats
+197.	The Guptas have built no monuments.
+198.	Pontus scored 29 pts this epoch. Total: 73
+200.	Johan plays The Huns with the Disaster card and the Weaponry card.
+201.	Volcano erupts in Persian Plateau. Earthquake strikes Eastern Ghats
+202.	The Huns have appeared in Western Steppe
+203.	The Huns defeated the Xiongnu and occupied Eastern Steppe
+204.	The Huns were defeated in Wei River by the Chou
+205.	The Huns were defeated in Wei River by the Chou
+206.	The Huns were defeated in Wei River by the Chou
+207.	The Huns were defeated in Wei River by the Chou
+208.	The Huns and the Chou destroyed each other in Wei River
+209.	The Huns defeated the Chou and occupied Wei River
+210.	The Huns defeated the Shang and occupied Yangtze Kiang
+211.	The Huns were defeated in Chekiang by the Shang
+212.	The Huns defeated the Shang and occupied Chekiang
+213.	The Huns were defeated in Tarim Basin by the Persians
+214.	The Huns defeated the Persians.
+215.	The Huns were defeated in Tarim Basin by the Persians
+216.	The Huns and the Persians destroyed each other in Tarim Basin
+217.	The Huns have built no monuments.
+218.	Johan scored 19 pts this epoch. Total: 65
+220.	Henrik plays The T'ang Dynasty with the Kingdom: Tiahuanaco card.
+221.	The Kingdom of Tiahuanaco has appeared in Southern Andes.
+222.	The T'ang Dynasty has appeared in Yangtze Kiang
+223.	The T'ang were defeated in Yellow River by the Chou
+224.	The T'ang were defeated in Yellow River by the Chou
+225.	The T'ang and the Chou destroyed each other in Yellow River
+226.	The T'ang were defeated in Yellow River by the Chou
+227.	The T'ang defeated the Chou and occupied Yellow River
+228.	T'ang expand into Si Kiang
+229.	The T'ang defeated the Huns and occupied Wei River
+230.	The T'ang defeated the Huns and occupied Chekiang
+231.	T'ang expand into Tarim Basin
+232.	The T'ang Dynasty has built a monument at Yangtze Kiang
+233.	Henrik scored 31 pts this epoch. Total: 75
+235.	Jonas plays The Arabs with the Pestilence card.
+236.	Pestilence struck Zagros
+237.	The Arabs have appeared in Arabian Peninsula
+238.	Palestine was absorbed into the Arabs
+239.	The Arabs and the Phoenicians destroyed each other in Levant
+240.	The Arabs defeated the Sumerians and occupied Upper Tigris
+241.	Arabs expand into Zagros
+242.	The Arabs defeated the Mauryans and occupied Persian Salt Desert
+243.	The Arabs defeated the Sassanids and occupied Persian Plateau
+244.	The Arabs and the Sassanids destroyed each other in Middle Tigris
+245.	The Arabs defeated the Carthaginians and occupied East Anatolia
+246.	The Arabs defeated the Egyptians.
+247.	The Arabs and the Egyptians destroyed each other in Western Anatolia
+248.	The Arabs and the Mauryans destroyed each other in Lower Indus
+249.	The Arabs have built a monument at Arabian Peninsula
+250.	Jonas scored 40 pts this epoch. Total: 93
+252.	Gustav plays The Khmers with the Jewish Revolt card and the Minor Empire: Anglo-Saxons card.
+253.	The Jewish Uprising defeated the Arabs and occupied Palestine
+254.	The Anglo-Saxons have appeared in Baltic Seaboard
+255.	Anglo-Saxons expand into Eire
+256.	Anglo-Saxons expand into Scandinavia
+257.	The Khmers have appeared in Mekong
+258.	The Khmers defeated the T'ang and occupied Si Kiang
+259.	The Khmers defeated the Mauryans and occupied Malayan Peninsula
+260.	The Khmers defeated the Mauryans and occupied Ganges Delta
+261.	Khmers expand into East Indies
+262.	The Khmers have built no monuments.
+263.	Gustav scored 23 pts this epoch. Total: 84
+265.	Johan was dealt The Seljuk Turks and kept it.
+266.	Pontus was dealt The Franks and kept it.
+267.	Henrik was dealt The Mongols and kept it.
+268.	Gustav was dealt The Vikings and gave it to Jonas.
+269.	Jonas was dealt The Sung Dynasty and gave it to Gustav.
+270.	Pontus plays The Franks with the Disaster card and the Migrants: North America card.
+271.	Volcano erupts in Yangtze Kiang. Earthquake strikes Central Europe
+272.	Migrants appear in West Indies and Pacific Seaboard
+273.	The Franks have appeared in Northern Gaul
+274.	Franks expand into Lower Rhine
+275.	The Franks and the Anglo-Saxons destroyed each other in Baltic Seaboard
+276.	Franks expand into Western Gaul
+277.	The Franks defeated the Celts and occupied Dnieper
+278.	The Franks defeated the Scythians and occupied Caucasus
+279.	The Franks were defeated in East Anatolia by the Arabs
+280.	The Franks defeated the Arabs and occupied East Anatolia
+281.	The Franks have built no monuments.
+282.	Pontus scored 29 pts this epoch. Total: 102
+284.	Jonas plays The Vikings with the Minor Empire: Fujiwara card and the Naval Power card.
+285.	Fujiwara has appeared in Hokaido
+286.	Fujiwarans expand into Honshu
+287.	Fujiwarans expand into Korean Peninsula
+288.	The Vikings have appeared in Scandinavia
+289.	The Vikings were defeated in Highlands by the Scythians
+290.	The Vikings defeated the Scythians and occupied Highlands
+291.	The Vikings and the Anglo-Saxons destroyed each other in Eire
+292.	Vikings expand into Appalachia
+293.	The Vikings have built no monuments.
+294.	Jonas scored 45 pts this epoch. Total: 138
+296.	Gustav plays The Sung Dynasty with the Siegecraft card.
+297.	The Sung Dynasty has appeared in Szechaun
+298.	The Sung defeated the T'ang and occupied Yangtze Kiang
+299.	The Sung defeated the T'ang and occupied Wei River
+300.	The Sung defeated the T'ang and occupied Tarim Basin
+301.	Sung expand into Great Plain of China
+302.	The Sung defeated the T'ang and occupied Chekiang
+303.	The Sung were defeated in Yellow River by the T'ang
+304.	The Sung Dynasty has built a monument at Szechaun
+305.	Gustav scored 27 pts this epoch. Total: 111
+307.	Johan plays The Seljuk Turks with the Kingdom: Mali card and the Elite Troops card.
+308.	The Kingdom of Mali has appeared in Gold Coast.
+309.	The Seljuk Turks have appeared in Turanian Plain
+310.	The Seljuks defeated the Arabs and occupied Persian Plateau
+311.	The Seljuks defeated the Arabs and occupied Zagros
+312.	Seljuks expand into Lower Tigris
+313.	The Seljuks were defeated in Tarim Basin by the Sung
+314.	The Seljuks defeated the Sung.
+315.	The Seljuks were defeated in Tarim Basin by the Sung
+316.	The Seljuks defeated the Sung and occupied Tarim Basin
+317.	The Seljuks were defeated in Upper Tigris by the Arabs
+318.	The Seljuks defeated the Arabs and occupied Upper Tigris
+319.	The Seljuks defeated the Arabs and occupied Levant
+320.	The Seljuks were defeated in Hindu Kush by the Sassanids
+321.	The Seljuks were defeated in Hindu Kush by the Sassanids
+322.	The Seljuk Turks have built a monument at Tarim Basin
+323.	Johan scored 22 pts this epoch. Total: 87
+325.	Henrik plays The Mongols with the Weaponry card and the Jihad card.
+326.	The Mongols have appeared in Mongolia
+327.	The Mongols defeated the Sung and occupied Great Plain of China
+328.	The Mongols defeated the Sung and occupied Yangtze Kiang
+329.	The Mongols defeated the Sung and occupied Szechaun
+330.	The Mongols defeated the Khmers and occupied Mekong
+331.	The Mongols defeated the Khmers and occupied Malayan Peninsula
+332.	The Mongols defeated the Mauryans.
+333.	The Mongols defeated the Mauryans and occupied Irawaddy
+334.	The Mongols defeated the Huns and occupied Eastern Steppe
+335.	The Mongols defeated the Xiongnu and occupied Northern European Plain
+336.	The Mongols defeated the Franks and occupied Baltic Seaboard
+337.	The Mongols defeated the Celts and occupied Central Europe
+338.	The Mongols defeated the Franks and occupied Northern Gaul
+339.	Mongols expand into Danubia
+340.	The Mongols were defeated in Dalmatia by the Macedonians
+341.	The Mongols defeated the Macedonians.
+342.	The Mongols were defeated in Dalmatia by the Macedonians
+343.	The Mongols defeated the Macedonians and occupied Dalmatia
+344.	The Mongols defeated the Macedonians.
+345.	The Mongols defeated the Macedonians and occupied Pindus
+346.	The Mongols defeated the Macedonians.
+347.	The Mongols defeated the Macedonians and occupied Morea
+348.	The Mongols have built a monument at Malayan Peninsula
+349.	Henrik scored 37 pts this epoch. Total: 112
+351.	Johan was dealt The Mughals and kept it.
+352.	Pontus was dealt Portugal and kept it.
+353.	Gustav was dealt Spain and kept it.
+354.	Henrik was dealt The Timurid Emirates and gave it to Jonas.
+355.	Jonas was dealt The Incas/Aztecs and gave it to Henrik.
+356.	Jonas plays The Timurid Emirates with the Barbarians card and the Minor Empire: Safavids card.
+357.	Barbarians have appeared in Plateau of Tibet
+358.	The Barbarians and the Mongols destroyed each other in Szechaun
+359.	The Safavids have appeared in Persian Salt Desert
+360.	The Safavids defeated the Sassanids.
+361.	The Safavids and the Sassanids destroyed each other in Hindu Kush
+362.	The Timurid Emirates have appeared in Turanian Plain
+363.	The Timurids were defeated in Eastern Steppe by the Mongols
+364.	The Timurids were defeated in Eastern Steppe by the Mongols
+365.	The Timurids defeated the Mongols and occupied Eastern Steppe
+366.	The Timurids and the Mongols destroyed each other in Mongolia
+367.	The Timurids were defeated in Yellow River by the T'ang
+368.	The Timurids were defeated in Yellow River by the T'ang
+369.	The Timurid Emirates have built no monuments.
+370.	Jonas scored 34 pts this epoch. Total: 172
+372.	Henrik plays The Incas/Aztecs with the Kingdom: Thai card and the Civil War card.
+373.	The Kingdom of Thai has appeared in Malayan Peninsula.
+374.	The Rebel Arabs defeated the Arabs and occupied Middle Tigris
+375.	The Rebel Arabs were defeated in Lower Indus by the Arabs
+376.	The Rebel Arabs were defeated in Arabian Peninsula by the Arabs
+377.	The Incas have appeared in Northern Andes
+378.	The Incas/Aztecs have appeared in Mexican Valley
+379.	The Aztecs defeated the Mayans.
+380.	The Aztecs were defeated in Central America by the Mayans
+381.	The Incas/Aztecs have built a monument at Northern Andes
+382.	Henrik scored 42 pts this epoch. Total: 154
+384.	Pontus plays Portugal with the Leader card.
+385.	Portugal has appeared in Western Iberia
+386.	Portugese expand into Brazil
+387.	Portugese expand into Patagonia
+388.	Portugese expand into Guiana Highlands
+389.	Portugese expand into Deep South
+390.	Portugese expand into Southern Africa
+391.	Portugese expand into Congo Basin
+392.	Portugese expand into Australia
+393.	Portugal has built a monument at Western Iberia
+394.	Pontus scored 34 pts this epoch. Total: 136
+396.	Gustav plays Spain with the Leader card.
+397.	Spain has appeared in Pyrenees
+398.	The Spaniards and the Portugese destroyed each other in Western Iberia
+399.	The Spaniards and the Greeks destroyed each other in Southern Iberia
+400.	The Spaniards were defeated in Massif by the Scythians
+401.	The Spaniards defeated the Scythians.
+402.	The Spaniards defeated the Scythians and occupied Massif
+403.	The Spaniards defeated the Aztecs and occupied Mexican Valley
+404.	The Spaniards and the Portugese destroyed each other in Patagonia
+405.	The Spaniards defeated the Mongols and occupied Northern Gaul
+406.	The Spaniards were defeated in Australia by the Portugese
+407.	Spain has built no monuments.
+408.	Gustav scored 29 pts this epoch. Total: 140
+410.	Johan plays The Mughals with the Leader card.
+411.	The Mughals have appeared in Ganges Valley
+412.	The Mughals and the Mauryans destroyed each other in Upper Indus
+413.	The Mughals defeated the Arabs and occupied Lower Indus
+414.	The Mughals defeated the Khmers and occupied Ganges Delta
+415.	The Mughals defeated the Thai and occupied Malayan Peninsula
+416.	The Mughals were defeated in Hindu Kush by the Safavids
+417.	The Mughals defeated the Safavids and occupied Hindu Kush
+418.	The Mughals defeated the Guptas.
+419.	The Mughals defeated the Guptas and occupied Eastern Deccan
+420.	The Mughals defeated the Safavids and occupied Persian Salt Desert
+421.	The Mughals have built a monument at Ganges Valley
+422.	Johan scored 35 pts this epoch. Total: 122
+429.	Jonas plays Russia with the Allies card and the Civil Service card.
+430.	Russia has appeared in Northern European Plain
+431.	The Russians defeated the Mongols and occupied Baltic Seaboard
+432.	Eastern Steppe was absorbed into the Russians
+433.	The Russians defeated the Sung.
+434.	The Russians defeated the Sung and occupied Wei River
+435.	Russians expand into Szechaun
+436.	The Russians defeated the Mongols and occupied Yangtze Kiang
+437.	The Russians defeated the Mongols and occupied Irawaddy
+438.	The Russians and the Mughals destroyed each other in Ganges Delta
+439.	The Russians defeated the Mongols and occupied Mekong
+440.	The Russians were defeated in Ganges Valley by the Mughals
+441.	The Russians defeated the Mughals and occupied Ganges Valley
+442.	The Russians were defeated in Great Plain of China by the Mongols
+443.	The Russians defeated the Mongols and occupied Great Plain of China
+444.	The Russians defeated the T'ang and occupied Yellow River
+445.	Russia has built no monuments.
+446.	Jonas scored 55 pts this epoch. Total: 227
+448.	Henrik plays The Manchu Dynasty with the Leader card.
+449.	The Manchu Dynasty has appeared in Manchurian Plain
+450.	The Manchu and the Fujiwarans destroyed each other in Korean Peninsula
+451.	The Manchu defeated the Russians and occupied Great Plain of China
+452.	The Manchu defeated the Sung and occupied Chekiang
+453.	The Manchu defeated the Khmers and occupied Si Kiang
+454.	The Manchu defeated the Russians and occupied Mekong
+455.	The Manchu defeated the Mughals and occupied Malayan Peninsula
+456.	The Manchu were defeated in Ganges Delta by the Russians
+457.	The Manchu and the Russians destroyed each other in Ganges Delta
+458.	The Manchu Dynasty has built a monument at Manchurian Plain
+459.	Henrik scored 35 pts this epoch. Total: 189
+461.	Gustav plays Netherlands with the Kingdom: Zimbabwe card.
+462.	The Kingdom of Zimbabwe has appeared in East Africa.
+463.	Netherlands have appeared in Lower Rhine
+464.	The Dutch defeated the Russians and occupied Baltic Seaboard
+465.	The Dutch and the Mongols destroyed each other in Central Europe
+466.	The Dutch defeated the Franks and occupied Dnieper
+467.	The Dutch were defeated in Eastern Ghats by the Guptas
+468.	Netherlands have built no monuments.
+469.	Gustav scored 34 pts this epoch. Total: 174
+471.	Johan plays The United States with the Reallocation card.
+472.	The United States have appeared in Appalachia
+473.	Reallocation: Fleets cashed in: S China Sea & E Pacific & Carribean Sea.
+474.	The Americans defeated the Portugese and occupied Deep South
+475.	The Americans were defeated in West Indies by the Native Americans
+476.	The Americans and the Native Americans destroyed each other in West Indies
+477.	The Americans defeated the Native Americans and occupied Pacific Seaboard
+478.	The Americans and the Portugese destroyed each other in Guiana Highlands
+479.	The Americans were defeated in Northern Andes by the Incas
+480.	The Americans and the Incas destroyed each other in Northern Andes
+481.	The Americans were defeated in Northern Andes by the Incas
+482.	The Americans defeated the Incas and occupied Northern Andes
+483.	The United States have built a monument at Appalachia
+484.	Johan scored 41 pts this epoch. Total: 163
+486.	Pontus plays Germany with the Minor Empire: Japan card and the Reallocation card.
+487.	Japan has appeared in Honshu
+488.	The Japanese defeated the Manchu and occupied Korean Peninsula
+489.	The Japanese and the Manchu destroyed each other in Great Plain of China
+490.	The Japanese were defeated in Hokaido by the Fujiwarans
+491.	Germany has appeared in Baltic Seaboard
+492.	 Reallocation: Fleets cashed in: Indian Ocean & Bay Of Bengal.
+493.	The Germans and the Americans destroyed each other in Deep South
+494.	The Germans and the Dutch destroyed each other in Dnieper
+495.	The Germans defeated the Dutch and occupied Central Europe
+496.	The Germans defeated the Dutch and occupied Lower Rhine
+497.	The Germans and the Americans destroyed each other in Appalachia
+498.	Germans expand into Great Lakes
+499.	The Germans defeated the Russians and occupied Northern European Plain
+500.	The Germans defeated the Russians and occupied Eastern Steppe
+501.	Germany has built no monuments.
+502.	Pontus scored 53 pts this epoch. Total: 189
+503.	The game is over.Jonas won with 227 points!
