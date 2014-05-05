@@ -76,7 +76,7 @@ var _checkDirectory = function _checkDirectory(data) {
       _printData(data);
 
     } else {
-      
+
       fs.mkdir(__dirname + '/' + OUTPUT_DIR + '/', function(err) {
 
         if (err) throw err;
