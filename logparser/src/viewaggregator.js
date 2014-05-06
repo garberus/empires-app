@@ -18,7 +18,8 @@ var PLAYERS = require('./static/players.json');
 var ViewAggregator = function() {
 
   this._gameReports = [];
-  this._playerCache = {};
+  this._totalCache = {};
+  this._highScoreCache = {};
 
 };
 
@@ -30,6 +31,8 @@ var ViewAggregator = function() {
 ViewAggregator.prototype.processGameData = function(id, data, cb) {
 
   var _this = this;
+
+  var pts = 0;
 
   var game = {
     name: id,
@@ -43,17 +46,23 @@ ViewAggregator.prototype.processGameData = function(id, data, cb) {
   data.forEach(function(action) {
 
     if (action.verb === CONFIG.VERBS.FINAL_SCORE) {
+
+      pts = parseInt(action.object);
+
       game.scores.push({
         name: action.player,
-        score: action.object
+        score: pts
       });
 
-      if (!_this._playerCache[action.player] && _this._playerCache[action.player] !== 0) {
-        _this._playerCache[action.player] = parseInt(action.object);
+      if (!_this._totalCache[action.player] && _this._totalCache[action.player] !== 0) {
+        _this._totalCache[action.player] = pts;
 
       } else {
-        _this._playerCache[action.player] += parseInt(action.object);
+        _this._totalCache[action.player] += pts;
       }
+
+      _this._highScoreCache[action.player] = pts > (_this._highScoreCache[action.player] || 0)
+          ? pts : (_this._highScoreCache[action.player] || 0);
     }
 
   });
@@ -131,11 +140,29 @@ ViewAggregator.prototype.getTotalPoints = function() {
 
   var totals = [];
 
-  for (var player in this._playerCache) {
-    totals.push({name: player, points: this._playerCache[player]});
+  for (var player in this._totalCache) {
+    totals.push({name: player, points: this._totalCache[player]});
   }
 
   return totals.sort(function(a, b) {
+    return b.points - a.points;
+  });
+
+};
+
+/**
+ * Finds the gighest scores for a user
+ * @returns {Array}
+ */
+ViewAggregator.prototype.getHighestScores = function() {
+
+  var scores = [];
+
+  for (var player in this._highScoreCache) {
+    scores.push({name: player, points: this._highScoreCache[player]});
+  }
+
+  return scores.sort(function(a, b) {
     return b.points - a.points;
   });
 
