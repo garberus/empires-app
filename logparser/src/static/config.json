@@ -1,0 +1,9 @@
+{
+  "OUTPUT_DIR" : "output",
+  "VERBS" : {
+    "SCORED" : 1,
+    "PLAYED_EMPIRE" : 2,
+    "PLAYED_CARD" : 3,
+    "FINAL_SCORE": 4
+  }
+}

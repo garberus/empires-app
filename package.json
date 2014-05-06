@@ -1,10 +1,10 @@
 {
   "name": "empires-app-logparser",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Parses text logs from gamesbyemail",
   "main": "logparser/parse.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha -R 'spec'"
   },
   "author": "",
   "license": "BSD-2-Clause",

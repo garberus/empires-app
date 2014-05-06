@@ -2,13 +2,20 @@
 
 'use strict';
 
+/**
+ * Will parse a text log from the Empires game by GamesByEmail and output this
+ * as JSON.
+ * Usage:
+ *        node parser.js logfile.txt
+ */
+
+var CONFIG = require('./src/static/config.json');
+
 var Reader = require('./src/logreader').LogReader;
 var fs = require('fs');
 
 var _reader = null;
 var _filename = null;
-
-var OUTPUT_DIR = 'output';
 
 /**
  * If insufficient number of arguments are passed to the parser, let the user know.
@@ -53,7 +60,9 @@ var _readFile = function _readFile(filename) {
 
     if(err) throw err;
 
-    _filename = filename.split('/')[1].split('.')[0];
+    var parts = filename.split('/');
+
+    _filename = parts[parts.length-1].split('.')[0];
 
     _reader = new Reader(data.toString().split("\n"), _checkDirectory);
 
@@ -69,7 +78,7 @@ var _readFile = function _readFile(filename) {
  */
 var _checkDirectory = function _checkDirectory(data) {
 
-  fs.exists(__dirname + '/' + OUTPUT_DIR + '/', function(exists) {
+  fs.exists(__dirname + '/' + CONFIG.OUTPUT_DIR + '/', function(exists) {
 
     if (exists) {
 
@@ -77,7 +86,7 @@ var _checkDirectory = function _checkDirectory(data) {
 
     } else {
 
-      fs.mkdir(__dirname + '/' + OUTPUT_DIR + '/', function(err) {
+      fs.mkdir(__dirname + '/' + CONFIG.OUTPUT_DIR + '/', function(err) {
 
         if (err) throw err;
 
@@ -96,7 +105,7 @@ var _checkDirectory = function _checkDirectory(data) {
  */
 var _printData = function _printData(data) {
 
-  var jsonfile = __dirname + '/' + OUTPUT_DIR + '/' + _filename + '.json';
+  var jsonfile = __dirname + '/' + CONFIG.OUTPUT_DIR + '/' + _filename + '.json';
 
   fs.writeFile(jsonfile, JSON.stringify(data), function (err) {
 

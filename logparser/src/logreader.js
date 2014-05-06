@@ -8,8 +8,8 @@
  * @type {Object}
  */
 
+var CONFIG = require('./static/config.json');
 var LineParser = require('./lineparser').LineParser;
-var PLAYERS = require('./static/players.json');
 
 /**
  * Enums for determining the type of action.
@@ -22,16 +22,14 @@ var TESTS = {
 
 /**
  * Main Logreader class.
- * @param {Array} file_data An array of text lines.
+ * @param {Array} filedata An array of text lines.
  * @param {function} cb A callback to be executed when the data is ready.
  * @constructor
  */
 var LogReader = function(filedata, cb) {
 
-  console.log('(logreader) init');
-
   if (!filedata) {
-    console.log('(logreader) no file data supplied');
+    console.log('(LogReader) no file data supplied');
     return;
   }
 
@@ -40,12 +38,20 @@ var LogReader = function(filedata, cb) {
   this._currentEpoch = 1;
   this._currentPlayer = null;
   this._currentEmpire = null;
+  this._players = [];
 
-  var i = 0, l = filedata.length;
+  var i = 0, l = filedata.length, begin = false;
 
   for (; i < l; i++) {
 
-    this.parseLogLine(filedata[i]);
+    // index 0 will be the name of the game
+    // the following will be player names until the row that starts with '0'
+    if (i > 0 && !begin) {
+      begin = (filedata[i].charAt(0) === '0');
+      if (!begin) this._players.push(filedata[i]);
+    } else {
+      this.parseLogLine(i, filedata[i]);
+    }
 
   }
 
@@ -61,7 +67,7 @@ var LogReader = function(filedata, cb) {
  * Parses one single line of text data.
  * @param {string} line A text line.
  */
-LogReader.prototype.parseLogLine = function(line) {
+LogReader.prototype.parseLogLine = function(index, line) {
 
   if (!line) {
     return;
@@ -78,7 +84,7 @@ LogReader.prototype.parseLogLine = function(line) {
    */
   if (TESTS.PLAYS.test(line)) {
 
-    console.log('(logreader) matched plays action', line);
+    //console.log('(LogReader) matched plays action', line);
 
     // valid for this entire round
     this._currentEmpire = LineParser.getEmpire();
@@ -88,14 +94,12 @@ LogReader.prototype.parseLogLine = function(line) {
 
       'player': this._currentPlayer,
       'actor': null,
-      'verb': 'PLAYED_EMPIRE',
+      'verb': CONFIG.VERBS.PLAYED_EMPIRE,
       'object': this._currentEmpire.title,
       'target': null,
       'epoch': this._currentEpoch
 
     };
-
-    //console.dir(obj);
 
     this._data.push(obj);
 
@@ -108,32 +112,31 @@ LogReader.prototype.parseLogLine = function(line) {
    */
   if (TESTS.SCORED.test(line)) {
 
-    console.log('(logreader) matched score action: ', line);
+    //console.log('(LogReader) matched score action: ', line);
 
     obj = {
 
       'player': this._currentPlayer,
       'actor': this._currentEmpire.title,
-      'verb': 'SCORED',
+      'verb': CONFIG.VERBS.SCORED,
       'object': LineParser.extractPlayerPoints(),
       'target': null,
       'epoch': this._currentEpoch
 
     };
 
-    //console.dir(obj);
-
     this._data.push(obj);
 
-    if (this._currentEpoch === 6) {
+    if (this._currentEpoch === 7) {
 
       // TODO: if a player played an additional empire, it will end up here too
+      // this is probably fine
 
       obj = {
 
         'player': this._currentPlayer,
         'actor': this._currentEmpire.title,
-        'verb': 'FINAL_SCORE',
+        'verb': CONFIG.VERBS.FINAL_SCORE,
         'object': LineParser.extractPlayerTotalPoints(),
         'target': null,
         'epoch': this._currentEpoch
@@ -142,12 +145,12 @@ LogReader.prototype.parseLogLine = function(line) {
 
       this._data.push(obj);
 
-      console.log('(logreader) matched end game final score for: ' +
-          this._currentPlayer, LineParser.extractPlayerTotalPoints());
+      //console.log('(LogReader) matched end game final score for: ' +
+      //    this._currentPlayer, LineParser.extractPlayerTotalPoints());
 
     }
 
-    if (this._roundsPlayed % PLAYERS.length === 0) {
+    if (this._roundsPlayed % this._players.length === 0) {
 
       this._currentEpoch++;
 
