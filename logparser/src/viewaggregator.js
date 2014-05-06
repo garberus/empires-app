@@ -18,10 +18,6 @@ var PLAYERS = require('./static/players.json');
 var ViewAggregator = function() {
 
   this._gameReports = [];
-  this._leaderBoards = {
-    points: [],
-    wins: []
-  };
   this._playerCache = {};
 
 };
@@ -115,7 +111,15 @@ ViewAggregator.prototype.getTotalWins = function() {
 
   });
 
-  return wins;
+  var winners = [];
+
+  for (var player in wins) {
+    winners.push({name: player, wins: wins[player]});
+  }
+
+  return winners.sort(function(a, b) {
+    return b.wins - a.wins;
+  });
 
 };
 

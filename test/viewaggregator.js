@@ -319,7 +319,7 @@ describe('ViewAggregator', function() {
 
   it('should correctly report the player who won the most games', function() {
     expect(Object.keys(ViewAggregator.getTotalWins()).length).toBe(1);
-    expect(ViewAggregator.getTotalWins()['Henrik']).toBe(2);
+    expect(ViewAggregator.getTotalWins()[0].wins).toBe(2);
   });
 
   it('should correctly report the player with most points', function() {
