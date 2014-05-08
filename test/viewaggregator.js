@@ -5,298 +5,8 @@
 var expect = require('expectacle');
 var ViewAggregator = require('../logparser/src/viewaggregator.js').ViewAggregator;
 
-var game1 = [
-  {
-    "player": "Jon ",
-    "actor": null,
-    "verb": 2,
-    "object": "The Manchu Dynasty",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jon ",
-    "actor": "The Manchu Dynasty",
-    "verb": 1,
-    "object": "35",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jon ",
-    "actor": "The Manchu Dynasty",
-    "verb": 4,
-    "object": "163",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Henrik",
-    "actor": null,
-    "verb": 2,
-    "object": "Netherlands",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Henrik",
-    "actor": "Netherlands",
-    "verb": 1,
-    "object": "63",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Henrik",
-    "actor": "Netherlands",
-    "verb": 4,
-    "object": "203",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Johan",
-    "actor": null,
-    "verb": 2,
-    "object": "France",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Johan",
-    "actor": "France",
-    "verb": 1,
-    "object": "44",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Johan",
-    "actor": "France",
-    "verb": 4,
-    "object": "170",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jonas",
-    "actor": null,
-    "verb": 2,
-    "object": "Britain",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jonas",
-    "actor": "Britain",
-    "verb": 1,
-    "object": "55",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jonas",
-    "actor": "Britain",
-    "verb": 4,
-    "object": "177",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Gustav",
-    "actor": null,
-    "verb": 2,
-    "object": "The United States",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Gustav",
-    "actor": "The United States",
-    "verb": 1,
-    "object": "36",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Gustav",
-    "actor": "The United States",
-    "verb": 4,
-    "object": "168",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Pontus",
-    "actor": null,
-    "verb": 2,
-    "object": "Germany",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Pontus",
-    "actor": "Germany",
-    "verb": 1,
-    "object": "46",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Pontus",
-    "actor": "Germany",
-    "verb": 4,
-    "object": "192",
-    "target": null,
-    "epoch": 7
-  }
-];
-var game2 = [
-  {
-    "player": "Jonas",
-    "actor": null,
-    "verb": 2,
-    "object": "Russia",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jonas",
-    "actor": "Russia",
-    "verb": 1,
-    "object": "64",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jonas",
-    "actor": "Russia",
-    "verb": 4,
-    "object": "190",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Gustav",
-    "actor": null,
-    "verb": 2,
-    "object": "The Manchu Dynasty",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Gustav",
-    "actor": "The Manchu Dynasty",
-    "verb": 1,
-    "object": "39",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Gustav",
-    "actor": "The Manchu Dynasty",
-    "verb": 4,
-    "object": "176",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jon ",
-    "actor": null,
-    "verb": 2,
-    "object": "Netherlands",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jon ",
-    "actor": "Netherlands",
-    "verb": 1,
-    "object": "36",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Jon ",
-    "actor": "Netherlands",
-    "verb": 4,
-    "object": "158",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Johan",
-    "actor": null,
-    "verb": 2,
-    "object": "Britain",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Johan",
-    "actor": "Britain",
-    "verb": 1,
-    "object": "54",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Johan",
-    "actor": "Britain",
-    "verb": 4,
-    "object": "189",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Henrik",
-    "actor": null,
-    "verb": 2,
-    "object": "The United States",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Henrik",
-    "actor": "The United States",
-    "verb": 1,
-    "object": "46",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Henrik",
-    "actor": "The United States",
-    "verb": 4,
-    "object": "199",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Pontus",
-    "actor": null,
-    "verb": 2,
-    "object": "Germany",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Pontus",
-    "actor": "Germany",
-    "verb": 1,
-    "object": "38",
-    "target": null,
-    "epoch": 7
-  },
-  {
-    "player": "Pontus",
-    "actor": "Germany",
-    "verb": 4,
-    "object": "166",
-    "target": null,
-    "epoch": 7
-  }
-];
+var game1 = require('./testdata_1');
+var game2 = require('./testdata_2');
 
 ViewAggregator.processGameData('game_1', game1);
 ViewAggregator.processGameData('game_2', game2);
@@ -346,6 +56,25 @@ describe('ViewAggregator', function() {
       expect(ViewAggregator.getHighestScores()[1].name).toBe('Pontus');
       expect(ViewAggregator.getHighestScores()[1].points).toBe(192);
     });
+
+  });
+
+  describe('epoch stats', function() {
+
+    it('should report the top scores for each epoch', function() {
+      var all = ViewAggregator.getScoreForEpoch();
+      expect(all).toBeArray();
+      expect(all.length).toBe(7);
+    });
+
+    it('should report the correct top and bottom scores for a single epoch', function() {
+      var epoch5 = ViewAggregator.getScoreForEpoch(4); // epoch 5
+      expect(epoch5).toBeObject();
+      expect(epoch5.top.score).toBe(42);
+      expect(epoch5.top.player).toBe('Pontus');
+      expect(epoch5.low.score).toBe(19);
+      expect(epoch5.low.player).toBe('Johan');
+    })
 
   });
 

@@ -20,6 +20,7 @@ var ViewAggregator = function() {
   this._gameReports = [];
   this._totalCache = {};
   this._highScoreCache = {};
+  this._epochCache = [];
 
 };
 
@@ -33,6 +34,8 @@ ViewAggregator.prototype.processGameData = function(id, data, cb) {
   var _this = this;
 
   var pts = 0;
+  var currentEpoch = 0;
+  var epochData = null;
 
   var game = {
     name: id,
@@ -63,6 +66,42 @@ ViewAggregator.prototype.processGameData = function(id, data, cb) {
 
       _this._highScoreCache[action.player] = pts > (_this._highScoreCache[action.player] || 0)
           ? pts : (_this._highScoreCache[action.player] || 0);
+    }
+
+    if (action.verb === CONFIG.VERBS.SCORED) {
+
+      pts = parseInt(action.object);
+
+      currentEpoch = action.epoch - 1;
+
+      epochData = _this._epochCache[currentEpoch];
+
+      if (!epochData) {
+        epochData = {
+          top: {
+            score: pts,
+            player: action.player
+          },
+          low: {
+            score: pts,
+            player: action.player
+          },
+          total: pts
+        };
+      } else {
+        if (pts > epochData.top.score) {
+          epochData.top.score = pts;
+          epochData.top.player = action.player;
+        }
+        if (pts < epochData.low.score) {
+          epochData.low.score = pts;
+          epochData.low.player = action.player;
+        }
+        epochData.total += pts;
+      }
+
+      _this._epochCache[currentEpoch] = epochData;
+
     }
 
   });
@@ -133,38 +172,57 @@ ViewAggregator.prototype.getTotalWins = function() {
 };
 
 /**
- * Aggregates the total amount of points accumulated by players across all games
+ * Utility function to convert an object to a sorted array.
+ * @param obj The object to be converted.
  * @returns {Array}
+ * @private
  */
-ViewAggregator.prototype.getTotalPoints = function() {
+ViewAggregator.prototype._convertObjectAndSort = function(obj) {
 
-  var totals = [];
+  var arr = [];
 
-  for (var player in this._totalCache) {
-    totals.push({name: player, points: this._totalCache[player]});
+  for (var player in obj) {
+    arr.push({name: player, points: obj[player]});
   }
 
-  return totals.sort(function(a, b) {
+  return arr.sort(function(a, b) {
     return b.points - a.points;
   });
 
 };
 
 /**
- * Finds the gighest scores for a user
+ * Aggregates the total amount of points accumulated by players across all games
+ * @returns {Array}
+ */
+ViewAggregator.prototype.getTotalPoints = function() {
+
+  return this._convertObjectAndSort(this._totalCache);
+
+};
+
+/**
+ * Finds the highest scores for a user
  * @returns {Array}
  */
 ViewAggregator.prototype.getHighestScores = function() {
 
-  var scores = [];
+  return this._convertObjectAndSort(this._highScoreCache);
 
-  for (var player in this._highScoreCache) {
-    scores.push({name: player, points: this._highScoreCache[player]});
+};
+
+/**
+ * Finds the highest and lowest scores for an epoch
+ * @param {number} index The game identifier.
+ * @returns {*}
+ */
+ViewAggregator.prototype.getScoreForEpoch = function(index) {
+
+  if (index) {
+    return this._epochCache[index];
+  } else {
+    return this._epochCache;
   }
-
-  return scores.sort(function(a, b) {
-    return b.points - a.points;
-  });
 
 };
 
