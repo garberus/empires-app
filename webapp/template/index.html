@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Empires Games Stats</title>
+    <link href="bootswatch-flatly.min.css" rel="stylesheet">
+    <style>
+        .name {
+            width: 150px;
+        }
+        .bar {
+            height: 12px;
+        }
+        .post {
+            background-color: #4EB1CB;
+        }
+        .thanks {
+            background-color: #CF5C60;
+        }
+        .account {
+            background-color: #717ECD;
+        }
+        .task {
+            background-color: #4AB471;
+        }
+        .opportunity {
+            background-color: #F3AE4E;
+        }
+        .event {
+            background-color: #D96383;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h3 class="text-muted">Empires</h3>
+    </div>
+
+    <div class="row marketing">
+        <div class="col-lg-4 col-md-6">
+            <h4>MOST WINS</h4>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td class="name">Henrik</td>
+                    <td><div class="bar post" data-value="3"></div></td>
+                </tr>
+                <tr>
+                    <td>Jonas</td>
+                    <td><div class="bar thanks" data-value="2"></div></td>
+                </tr>
+                <tr>
+                    <td>Gustav</td>
+                    <td><div class="bar account" data-value="2"></div></td>
+                </tr>
+                <tr>
+                    <td>Pontus</td>
+                    <td><div class="bar task" data-value="1"></div></td>
+                </tr>
+                <tr>
+                    <td>Johan</td>
+                    <td><div class="bar event" data-value="0"></div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <h4>MOST POINTS</h4>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td class="name">Henrik</td>
+                    <td><div class="bar post" data-value="1542"></div></td>
+                </tr>
+                <tr>
+                    <td>Jonas</td>
+                    <td><div class="bar thanks" data-value="1365"></div></td>
+                </tr>
+                <tr>
+                    <td>Gustav</td>
+                    <td><div class="bar account" data-value="1289"></div></td>
+                </tr>
+                <tr>
+                    <td>Pontus</td>
+                    <td><div class="bar task" data-value="1167"></div></td>
+                </tr>
+                <tr>
+                    <td>Johan</td>
+                    <td><div class="bar event" data-value="1089"></div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-lg-4 col-md-6">
+            <h4>MOST POINTS IN A GAME</h4>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td class="name">Henrik</td>
+                    <td><div class="bar post" data-value="208"></div></td>
+                </tr>
+                <tr>
+                    <td>Jonas</td>
+                    <td><div class="bar thanks" data-value="205"></div></td>
+                </tr>
+                <tr>
+                    <td>Gustav</td>
+                    <td><div class="bar account" data-value="193"></div></td>
+                </tr>
+                <tr>
+                    <td>Pontus</td>
+                    <td><div class="bar task" data-value="186"></div></td>
+                </tr>
+                <tr>
+                    <td>Johan</td>
+                    <td><div class="bar event" data-value="179"></div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>This page displays aggregated statistics from games we've played over at <a href="http://www.gamesbyemail.com">gamesbyemail.com</a>.</p>
+    </div>
+
+</div> <!-- /container -->
+<script>
+    function generateBars(table) {
+        var bars = table.getElementsByClassName('bar');
+
+        var i = 0, l = bars.length, obj, topp = 0, newwidth;
+        var size = bars[i].parentElement.getBoundingClientRect().width - 35;
+        // find out top value
+        for (; i < l; i++) {
+            topp = parseInt(bars[i].dataset.value) > topp ? parseInt(bars[i].dataset.value) : topp;
+            console.log('(top)', topp);
+        }
+        i = 0;
+        for (; i < l; i++) {
+            bars[i].style.width = ((bars[i].dataset.value/topp) * size) + 'px';
+        }
+    }
+
+    generateBars(document.getElementsByTagName('table')[0]);
+    generateBars(document.getElementsByTagName('table')[1]);
+    generateBars(document.getElementsByTagName('table')[2]);
+</script>
+</body>
+</html>
