@@ -17,7 +17,9 @@ var LineParser = require('./lineparser').LineParser;
  */
 var TESTS = {
   'PLAYS': new RegExp('plays'),
-  'SCORED': new RegExp('scored')
+  'SCORED': new RegExp('scored'),
+  'BATTLE': new RegExp('defeated'), // both defeated and was defeated is a battle
+  'DESTROYED': new RegExp('destroyed each other')
 };
 
 /**
@@ -90,11 +92,58 @@ LogReader.prototype.parseLogLine = function(index, line) {
     this._currentEmpire = LineParser.getEmpire();
     this._currentPlayer = LineParser.getPlayer();
 
+    var cards = LineParser.getCards();
+    var _this = this;
+
     obj = {
 
       'player': this._currentPlayer,
       'actor': null,
       'verb': CONFIG.VERBS.PLAYED_EMPIRE,
+      'object': this._currentEmpire.title,
+      'target': null,
+      'epoch': this._currentEpoch
+
+    };
+
+    this._data.push(obj);
+
+    if (cards.length) {
+
+      cards.forEach(function(card) {
+
+        obj = {
+
+          'player': _this._currentPlayer,
+          'actor': _this._currentEmpire.title,
+          'verb': CONFIG.VERBS.PLAYED_CARD,
+          'object': card,
+          'target': null,
+          'epoch': _this._currentEpoch
+
+        };
+
+        _this._data.push(obj);
+
+      });
+
+    }
+
+  }
+
+  /**
+   * BATTLE action
+   * - a 'defeated', 'was defeated' or 'destroyed each other' line was found
+   */
+  if (TESTS.BATTLE.test(line) || TESTS.DESTROYED.test(line)) {
+
+    //console.log('(LogReader) matched battle action', line);
+
+    obj = {
+
+      'player': this._currentPlayer,
+      'actor': null,
+      'verb': CONFIG.VERBS.BATTLE_HAPPENED,
       'object': this._currentEmpire.title,
       'target': null,
       'epoch': this._currentEpoch

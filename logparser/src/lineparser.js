@@ -4,6 +4,7 @@
 
 var PLAYERS = require('./static/players.json');
 var EMPIRES = require('./static/empires.json');
+var CARDS = require('./static/cards.json');
 
 var LineParser = function() {
 
@@ -16,6 +17,7 @@ LineParser.prototype._init = function _init() {
   this._line = '';
   this._players = [];
   this._empires = [];
+  this._cards = [];
 
 };
 
@@ -61,6 +63,24 @@ LineParser.prototype._setPlayerArray = function _setPlayerArray() {
 
 };
 
+LineParser.prototype._setCardArray = function _setCardArray() {
+
+  var i = 0, l = CARDS.length;
+
+  for (; i < l; i++) {
+
+    if (this._line.indexOf(CARDS[i].title) > -1) {
+
+      this._cards[this._line.indexOf(CARDS[i].title)] = CARDS[i].title;
+
+    }
+
+  }
+
+  this._cards = this._squashArray(this._cards);
+
+};
+
 LineParser.prototype._squashArray = function _squashArray(arr) {
 
   var i = 0, l = arr.length, squashed = [];
@@ -86,6 +106,7 @@ LineParser.prototype.setLine = function setLine(line) {
   this._line = line;
   this._setPlayerArray();
   this._setEmpireArray();
+  this._setCardArray();
 
 };
 
@@ -98,6 +119,12 @@ LineParser.prototype.getPlayer = function getPlayer(index) {
 LineParser.prototype.getEmpire = function getEmpire(index) {
 
   return this._empires[index || 0];
+
+};
+
+LineParser.prototype.getCards = function getCards() {
+
+  return this._cards;
 
 };
 

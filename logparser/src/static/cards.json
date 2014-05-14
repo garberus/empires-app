@@ -1,0 +1,170 @@
+[
+    {
+        "title":"Black Death",
+        "text":"Choose two adjacent Continental Regions. Every army in a Land in those Regions rolls a die. If the army rolls a 1, it is eliminated (along with any fort)."
+    },
+    {
+        "title":"Famine",
+        "text":"Choose a Continental Region. All armies in Lands in that Region must roll a die. A roll of 1 means that army (and any fort) is destroyed."
+    },
+    {
+        "title":"Disaster",
+        "text":"Choose up to two lands that contain monuments. Destroy the monuments in those Lands. Any city or fort in those Lands is also destroyed. Any capital in those Lands is reduced to a city."
+    },
+    {
+        "title":"Pestilence",
+        "text":"Choose a Land. Any army in that Land must roll 3 dice. If a one is rolled on any die, the army (and any fort) in that Land is destroyed. All adjacent lands to the first must roll 2 dice. Again, any roll of 1 destroys the army (and any fort) in that Land."
+    },
+    {
+        "title":"Plague",
+        "text":"Choose an occupied Land. The army in that Land must roll 4 dice. If a 1 is rolled on any die, the army (and any fort) in that Land is destroyed. If the army dies, the Plague spreads to an adjacent Land of your choice, where the army there must roll 3 dice. Again, a 1 eliminates the army and any fort. The Plague continues to travel using 3 dice until an army survives it or until it can spread no further due to vacant lands or seas."
+    },
+    {
+        "title":"Kingdom: Canaanites",
+        "text":"Place one army and a city in Palestine. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Kingdom: Etruscans",
+        "text":"Place one army and a city in Northern Italia. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Kingdom: Kush",
+        "text":"Place one army and a city in the Upper Nile. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Kingdom: Tiahuanaco",
+        "text":"Place one army and a city in the Southern Andes. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Kingdom: Mali",
+        "text":"Place one army and a city in the Gold Coast. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Kingdom: Thai",
+        "text":"Place one army and a city in the Malayan Peninsula. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Kingdom: Zimbabwe",
+        "text":"Place one army and a city in East Africa. Any army(and fort) already there is destroyed."
+    },
+    {
+        "title":"Jewish Revolt",
+        "text":"One army appears in Palestine and attacks any army there using 3 dice. This army attacks without any Difficult Terrain penalties (fort bonuses still apply for the defender). If victorious, Palestine falls under your control."
+    },
+    {
+        "title":"Civil War",
+        "text":"Place 3 armies in three different lands of any one enemy empire. These armies attack the existing army in that land without any Difficult Terrain penalties (fort bonuses still apply for the defender). If victorious, these lands fall under your control."
+    },
+    {
+        "title":"Migrants: Africa",
+        "text":"Place two armies in any two lands in Africa. These armies must occupy vacant Lands. They may not build monuments or attack."
+    },
+    {
+        "title":"Migrants: Australia",
+        "text":"Place two armies in any two lands in Australia. These armies must occupy vacant Lands. They may not build monuments or attack."
+    },
+    {
+        "title":"Migrants: North America",
+        "text":"Place two armies in any two lands in North America. These armies must occupy vacant Lands. They may not build monuments or attack."
+    },
+    {
+        "title":"Crusade",
+        "text":"Place 3 armies in the Eastern Mediterranean Sea Space. These armies may expand from the sea using normal expansion rules. They attack with a +1 to their die roll. If Palestine is captured by the crusaders, place a fort and a city in that Land."
+    },
+    {
+        "title":"Barbarians",
+        "text":"Place an army in a Barren Land and attack out of this Barren Land into an occupied enemy Land. Continue attacking adjacent occupied lands until a Barbarian army is defeated or until all adjacent enemy-occupied Lands have been conquered."
+    },
+    {
+        "title":"Minor Empire: Hittites",
+        "text":"Strength: 3, Start Land: Eastern Anatolia, Navigation: none, Capital:Yes"
+    },
+    {
+        "title":"Minor Empire: Phoenicia",
+        "text":"Strength: 3, Start Land: Levant, Navigation: W. Med.,E.Med., Capital:Yes"
+    },
+    {
+        "title":"Minor Empire: Mayans",
+        "text":"Strength: 2, Start Land: Central America, Navigation: none, Capital:Yes"
+    },
+    {
+        "title":"Minor Empire: Anglo-Saxons",
+        "text":"Strength: 3, Start Land: Baltic Seaboard, Navigation: North Sea, Capital:No"
+    },
+    {
+        "title":"Minor Empire: Fujiwara",
+        "text":"Strength: 3, Start Land: Hokaido, Navigation: Sea of Japan, Capital:Yes"
+    },
+    {
+        "title":"Minor Empire: Safavids",
+        "text":"Strength: 3, Start Land: Persian Salt Desert, Navigation: none, Capital:Yes"
+    },
+    {
+        "title":"Minor Empire: Japan",
+        "text":"Strength: 5, Start Land: Honshu, Navigation: Sea of Japan, Capital:Yes"
+    },
+    {
+        "title":"Allies",
+        "text":"Epoch 1 to 2: The active empire gets 1 extra army.<br><br>Epoch 3 to 7: The active empire gets 2 extra armies.<sup>1</sup><br><br><br><sup>1</sup>(intentionally altered from original)"
+    },
+    {
+        "title":"Astronomy",
+        "text":"The Active Empire may place a fleet in any sea (not ocean) at the start of a turn. This is in addition to any fleets it normally receives (if any)."
+    },
+    {
+        "title":"Reallocation",
+        "text":"After placing all fleets but before expanding, the Active Empire may remove as many fleets as desired and replace them with coins. Once expansion begins, no more reallocating may take place."
+    },
+    {
+        "title":"Civil Service",
+        "text":"The Active Empire receives one coin at the start of its turn. If the Empire has a capital, it receives an extra coin. If the empire has navigation it receives a bonus coin. The two bonuses may both be gained if applicable."
+    },
+    {
+        "title":"Engineering",
+        "text":"If the Active Empire has a capital, add two forts to its army pool."
+    },
+    {
+        "title":"Leader",
+        "text":"The active empire rolls 3 dice when attacking until it rolls triples. Any triples roll kills the Leader and returns the empire to attacking with 2 dice."
+    },
+    {
+        "title":"Weaponry",
+        "text":"The active empire adds +1 to each of its die rolls this turn."
+    },
+    {
+        "title":"Elite Troops",
+        "text":"The Active Empire's armies win all ties until they lose an army in combat."
+    },
+    {
+        "title":"Expert Troops: Forests",
+        "text":"The Active Empire's armies suffer no Difficult Terrain penalties when attacking through forests. Defenders only roll 1 die when defending against these attackers."
+    },
+    {
+        "title":"Expert Troops: Mountains",
+        "text":"The Active Empire's armies suffer no Difficult Terrain penaltlies when attacking over moutains. Defenders only roll 1 die when defending against these attackers."
+    },
+    {
+        "title":"Expert Troops: Straits",
+        "text":"The Active Empire's armies suffer no Difficult Terrain penalties when attacking across straits. Defenders only roll 1 die when defending against these attackers."
+    },
+    {
+        "title":"Jihad",
+        "text":"The Active Empire uses 3 dice to attack and wins all ties until it loses its first army, at which point it attacks using 2 dice, but still wins ties. After losing its second army, the empire does not win ties and attacks normally for the remainder of the turn."
+    },
+    {
+        "title":"Naval Power",
+        "text":"The Active Empire's armies suffer a lower penalty when attacking a Land from a fleet. Defenders only roll 2 dice defending against these naval attackers."
+    },
+    {
+        "title":"Population Explosion",
+        "text":"The Active Empire receives two coins at the start of its turn."
+    },
+    {
+        "title":"Siegecraft",
+        "text":"The Active Empire's armies gain a +1 bonus to die rolls when attacking a Land that contains a fort, capital or city. Furthermore, when the attacking army is victorious against a Land with only a fort, the defender loses both the fort and the defending army at the same time. A Land with both a fort and a city (or capital) only offers a +1 bonus."
+    },
+    {
+        "title":"Treachery",
+        "text":"When playing this card, pick a Land controlled by an enemy. During this turn, if you attack that Land, you automatically win the attack. If the land is not attacked this turn, then the card is wasted."
+    }
+]

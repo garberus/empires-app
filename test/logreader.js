@@ -12,6 +12,8 @@ var sample = [
   '0.	Epoch 1 - 3000BC - Dawn of History',
   '7.	Eric plays Sumeria with the Engineering card.',
   '23.	Henrik scored 8 pts this epoch. Total: 8',
+  '68.	The Assyrians were defeated in East Anatolia by the Hittites',
+  '97.	The Phoenicians defeated the Assyrians and occupied Upper Tigris',
   '596.	Eric scored 39 pts this epoch. Total: 180'
 ];
 
@@ -32,9 +34,9 @@ describe('LogReader', function() {
       });
     });
 
-    it('the array of known actions should be 3', function(done) {
+    it('the array of known actions should be 5', function(done) {
       new LogReader(sample, function(data) {
-        expect(data.length).toBe(3);
+        expect(data.length).toBe(6);
         done();
       });
     });

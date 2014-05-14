@@ -9,7 +9,7 @@ describe('LineParser', function() {
 
   describe('parsing play action', function() {
 
-    var line = '42.	Henrik plays The Shang Dynasty.';
+    var line = '34.	Henrik plays The Indus Valley Civilization with the Disaster card and the Civil Service card.';
 
     it('should return the player', function() {
       Parser.setLine(line);
@@ -18,7 +18,17 @@ describe('LineParser', function() {
 
     it('should return the empire being played', function() {
       Parser.setLine(line);
-      expect(Parser.getEmpire().title).toBe('The Shang Dynasty');
+      expect(Parser.getEmpire().title).toBe('The Indus Valley Civilization');
+    });
+
+    it('should return the number of cards played', function() {
+      Parser.setLine(line);
+      expect(Parser.getCards().length).toBe(2);
+    });
+
+    it('should return the second card as "Civil Service"', function() {
+      Parser.setLine(line);
+      expect(Parser.getCards()[1]).toBe('Civil Service');
     });
 
   });
