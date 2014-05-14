@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Empires Games Stats</title>
-    <link href="bootswatch-flatly.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="bootswatch-yeti.min.css">
     <style>
         .name {
             width: 150px;
@@ -28,17 +28,52 @@
         .event {
             background-color: #D96383;
         }
-
+        .spacing {
+            margin-bottom: 35px;
+        }
+        .stats-table td {
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        .stats-table td span {
+            font-size: 14pt;
+            font-weight: normal;
+        }
     </style>
 </head>
 <body>
 <div class="container">
     <div class="header">
-        <h3 class="text-muted">Empires</h3>
+        <h1 class="spacing">Empires Leaderboard <br /><small>6 GAMES PLAYED</small></h1>
+        <table class="table stats-table spacing">
+            <tbody>
+            <tr class="active">
+                <td>
+                    209<br>
+                    <span>Highest points</span>
+                </td>
+                <td>
+                    170<br>
+                    <span>Average points</span>
+                </td>
+            </tr>
+            <tr class="active">
+                <td>
+                    4.567<br>
+                    <span>Cards played</span>
+                </td>
+                <td>
+                    10.567<br>
+                    <span>Battles fought</span>
+                </td>
+            </tr>
+            </tbody>
+        </table>
     </div>
 
-    <div class="row marketing">
-        <div class="col-lg-4 col-md-6">
+    <div class="row">
+        <div class="col-md-6">
             <h4>MOST WINS</h4>
             <table class="table">
                 <tbody>
@@ -52,7 +87,7 @@
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar account" data-value="2"></div></td>
+                    <td><div class="bar opportunity" data-value="2"></div></td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
@@ -66,7 +101,7 @@
             </table>
         </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-6">
             <h4>MOST POINTS</h4>
             <table class="table">
                 <tbody>
@@ -80,7 +115,7 @@
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar account" data-value="1289"></div></td>
+                    <td><div class="bar opportunity" data-value="1289"></div></td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
@@ -94,7 +129,7 @@
             </table>
         </div>
 
-        <div class="col-lg-4 col-md-6">
+        <div class="col-md-6">
             <h4>MOST POINTS IN A GAME</h4>
             <table class="table">
                 <tbody>
@@ -108,7 +143,7 @@
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar account" data-value="193"></div></td>
+                    <td><div class="bar opportunity" data-value="193"></div></td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
@@ -117,6 +152,34 @@
                 <tr>
                     <td>Johan</td>
                     <td><div class="bar event" data-value="179"></div></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="col-md-6">
+            <h4>MOST BATTLES WON</h4>
+            <table class="table">
+                <tbody>
+                <tr>
+                    <td class="name">Henrik</td>
+                    <td><div class="bar post" data-value="614"></div></td>
+                </tr>
+                <tr>
+                    <td>Jonas</td>
+                    <td><div class="bar thanks" data-value="580"></div></td>
+                </tr>
+                <tr>
+                    <td>Gustav</td>
+                    <td><div class="bar opportunity" data-value="570"></div></td>
+                </tr>
+                <tr>
+                    <td>Pontus</td>
+                    <td><div class="bar task" data-value="450"></div></td>
+                </tr>
+                <tr>
+                    <td>Johan</td>
+                    <td><div class="bar event" data-value="425"></div></td>
                 </tr>
                 </tbody>
             </table>
@@ -145,9 +208,10 @@
         }
     }
 
-    generateBars(document.getElementsByTagName('table')[0]);
     generateBars(document.getElementsByTagName('table')[1]);
     generateBars(document.getElementsByTagName('table')[2]);
+    generateBars(document.getElementsByTagName('table')[3]);
+    generateBars(document.getElementsByTagName('table')[4]);
 </script>
 </body>
 </html>
