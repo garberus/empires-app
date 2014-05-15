@@ -18,7 +18,7 @@ describe('LineParser', function() {
 
     it('should return the empire being played', function() {
       Parser.setLine(line);
-      expect(Parser.getEmpire().title).toBe('The Indus Valley Civilization');
+      expect(Parser.getEmpires()[0].title).toBe('The Indus Valley Civilization');
     });
 
     it('should return the number of cards played', function() {
@@ -45,6 +45,91 @@ describe('LineParser', function() {
     it('should return the score for this round', function() {
       Parser.setLine(line);
       expect(Parser.extractPlayerPoints()).toBe('17');
+    });
+
+  });
+
+  describe('parsing battle action', function() {
+
+    var victory = 'The Macedonians defeated the Phoenicians and occupied Levant';
+    var defeat = 'The Macedonians were defeated in Persian Plateau by the Persians';
+    var draw = 'The Macedonians and the Sumerians destroyed each other in Zagros';
+
+    describe('victory', function() {
+
+      it('should return the acting Empire', function() {
+        Parser.setLine(victory);
+        expect(Parser.getEmpires()[0].title).toBe('Macedonia');
+      });
+
+      it('should return the passive Empire', function() {
+        Parser.setLine(victory);
+        expect(Parser.getEmpires()[1].title).toBe('Phoenicia');
+      });
+
+    });
+
+    describe('defeat', function() {
+
+      it('should return the acting Empire', function() {
+        Parser.setLine(defeat);
+        expect(Parser.getEmpires()[0].title).toBe('Macedonia');
+      });
+
+      it('should return the passive Empire', function() {
+        Parser.setLine(defeat);
+        expect(Parser.getEmpires()[1].title).toBe('Persia');
+      });
+
+    });
+
+    describe('draw', function() {
+
+      it('should return the acting Empire', function() {
+        Parser.setLine(draw);
+        expect(Parser.getEmpires()[0].title).toBe('Macedonia');
+      });
+
+      it('should return the passive Empire', function() {
+        Parser.setLine(draw);
+        expect(Parser.getEmpires()[1].title).toBe('Sumeria');
+      });
+
+    });
+
+    describe('rebels', function() {
+
+      var rebellost = 'The Rebel Vedic were defeated in Upper Indus by the Vedic';
+      var rebelwin = '101.	The Rebel Egyptians defeated the Egyptians and occupied Nubia';
+
+      describe('victory', function() {
+
+        it('should return the acting Empire', function() {
+          Parser.setLine(rebelwin);
+          expect(Parser.getEmpires()[0].title).toBe('Egyptian Rebels');
+        });
+
+        it('should return the passive Empire', function() {
+          Parser.setLine(rebelwin);
+          expect(Parser.getEmpires()[1].title).toBe('Egypt');
+        });
+
+      });
+
+      describe('defeat', function() {
+
+        it('should return the acting Empire', function() {
+          Parser.setLine(rebellost);
+          expect(Parser.getEmpires()[0].title).toBe('Vedic Rebels');
+        });
+
+        it('should return the passive Empire', function() {
+          Parser.setLine(rebellost);
+          expect(Parser.getEmpires()[1].title).toBe('The Vedic City States');
+        });
+
+      });
+
     });
 
   });

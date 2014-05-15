@@ -23,7 +23,7 @@ LineParser.prototype._init = function _init() {
 
 LineParser.prototype._setEmpireArray = function _setEmpireArray() {
 
-  var i = 0, l = EMPIRES.length;
+  var i = 0, l = EMPIRES.length, rebel = {};
 
   for (; i < l; i++) {
 
@@ -33,11 +33,22 @@ LineParser.prototype._setEmpireArray = function _setEmpireArray() {
 
     }
 
+    // check for sneaky rebels
+    if (this._line.indexOf('The Rebel ' + EMPIRES[i].name) > -1) {
+
+      rebel.name = 'The Rebel ' + EMPIRES[i].name;
+      rebel.title = EMPIRES[i].adjective + ' Rebels';
+      this._empires[this._line.indexOf('The Rebel ' + EMPIRES[i].name)] = rebel;
+
+    }
+
     if (this._line.indexOf(EMPIRES[i].name) > -1) {
 
       this._empires[this._line.indexOf(EMPIRES[i].name)] = EMPIRES[i];
 
     }
+
+    rebel = {};
 
   }
 
@@ -116,9 +127,9 @@ LineParser.prototype.getPlayer = function getPlayer(index) {
 
 };
 
-LineParser.prototype.getEmpire = function getEmpire(index) {
+LineParser.prototype.getEmpires = function getEmpire() {
 
-  return this._empires[index || 0];
+  return this._empires;
 
 };
 

@@ -19,6 +19,8 @@ var TESTS = {
   'PLAYS': new RegExp('plays'),
   'SCORED': new RegExp('scored'),
   'BATTLE': new RegExp('defeated'), // both defeated and was defeated is a battle
+  'BATTLE_WON': new RegExp('defeated the'),
+  'OCCUPY': new RegExp('occupied'),
   'DESTROYED': new RegExp('destroyed each other')
 };
 
@@ -77,6 +79,14 @@ LogReader.prototype.parseLogLine = function(index, line) {
 
   var obj = null;
 
+  var getBattleResult = function() {
+
+    if (TESTS.BATTLE_WON.test(line)) return 'win';
+    else if (TESTS.DESTROYED.test(line)) return 'draw';
+    else return 'defeat';
+
+  };
+
   LineParser.setLine(line);
 
   /**
@@ -89,7 +99,7 @@ LogReader.prototype.parseLogLine = function(index, line) {
     //console.log('(LogReader) matched plays action', line);
 
     // valid for this entire round
-    this._currentEmpire = LineParser.getEmpire();
+    this._currentEmpire = LineParser.getEmpires()[0];
     this._currentPlayer = LineParser.getPlayer();
 
     var cards = LineParser.getCards();
@@ -101,7 +111,7 @@ LogReader.prototype.parseLogLine = function(index, line) {
       'actor': null,
       'verb': CONFIG.VERBS.PLAYED_EMPIRE,
       'object': this._currentEmpire.title,
-      'target': null,
+      'result': null,
       'epoch': this._currentEpoch
 
     };
@@ -118,7 +128,7 @@ LogReader.prototype.parseLogLine = function(index, line) {
           'actor': _this._currentEmpire.title,
           'verb': CONFIG.VERBS.PLAYED_CARD,
           'object': card,
-          'target': null,
+          'result': null,
           'epoch': _this._currentEpoch
 
         };
@@ -137,15 +147,13 @@ LogReader.prototype.parseLogLine = function(index, line) {
    */
   if (TESTS.BATTLE.test(line) || TESTS.DESTROYED.test(line)) {
 
-    //console.log('(LogReader) matched battle action', line);
-
     obj = {
 
       'player': this._currentPlayer,
-      'actor': null,
+      'actor': this._currentEmpire.title,
       'verb': CONFIG.VERBS.BATTLE_HAPPENED,
-      'object': this._currentEmpire.title,
-      'target': null,
+      'object': LineParser.getEmpires()[1].title,
+      'result': getBattleResult(),
       'epoch': this._currentEpoch
 
     };
@@ -169,7 +177,7 @@ LogReader.prototype.parseLogLine = function(index, line) {
       'actor': this._currentEmpire.title,
       'verb': CONFIG.VERBS.SCORED,
       'object': LineParser.extractPlayerPoints(),
-      'target': null,
+      'result': null,
       'epoch': this._currentEpoch
 
     };
@@ -187,7 +195,7 @@ LogReader.prototype.parseLogLine = function(index, line) {
         'actor': this._currentEmpire.title,
         'verb': CONFIG.VERBS.FINAL_SCORE,
         'object': LineParser.extractPlayerTotalPoints(),
-        'target': null,
+        'result': null,
         'epoch': this._currentEpoch
 
       };

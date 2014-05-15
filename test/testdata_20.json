@@ -1,0 +1,3338 @@
+[
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "Sumeria",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Jon ",
+    "actor": "Sumeria",
+    "verb": 3,
+    "object": "Minor Empire: Hittites",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Jon ",
+    "actor": "Sumeria",
+    "verb": 1,
+    "object": "10",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "Egypt",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Gustav",
+    "actor": "Egypt",
+    "verb": 1,
+    "object": "7",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "The Minoans",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Johan",
+    "actor": "The Minoans",
+    "verb": 3,
+    "object": "Population Explosion",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Johan",
+    "actor": "The Minoans",
+    "verb": 1,
+    "object": "6",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "The Indus Valley Civilization",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Indus Valley Civilization",
+    "verb": 3,
+    "object": "Kingdom: Canaanites",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Indus Valley Civilization",
+    "verb": 1,
+    "object": "8",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "Babylonia",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Henrik",
+    "actor": "Babylonia",
+    "verb": 5,
+    "object": "Sumeria",
+    "result": "draw",
+    "epoch": 1
+  },
+  {
+    "player": "Henrik",
+    "actor": "Babylonia",
+    "verb": 5,
+    "object": "Sumeria",
+    "result": "win",
+    "epoch": 1
+  },
+  {
+    "player": "Henrik",
+    "actor": "Babylonia",
+    "verb": 1,
+    "object": "5",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "The Shang Dynasty",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Shang Dynasty",
+    "verb": 3,
+    "object": "Migrants: Africa",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Shang Dynasty",
+    "verb": 1,
+    "object": "4",
+    "result": null,
+    "epoch": 1
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "Assyria",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Pontus",
+    "actor": "Assyria",
+    "verb": 5,
+    "object": "Babylonia",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Pontus",
+    "actor": "Assyria",
+    "verb": 5,
+    "object": "Babylonia",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Pontus",
+    "actor": "Assyria",
+    "verb": 5,
+    "object": "Babylonia",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Pontus",
+    "actor": "Assyria",
+    "verb": 5,
+    "object": "The Hittites",
+    "result": "defeat",
+    "epoch": 2
+  },
+  {
+    "player": "Pontus",
+    "actor": "Assyria",
+    "verb": 5,
+    "object": "The Hittites",
+    "result": "defeat",
+    "epoch": 2
+  },
+  {
+    "player": "Pontus",
+    "actor": "Assyria",
+    "verb": 1,
+    "object": "12",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "The Chou Dynasty",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Chou Dynasty",
+    "verb": 5,
+    "object": "The Shang Dynasty",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Chou Dynasty",
+    "verb": 5,
+    "object": "The Shang Dynasty",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Chou Dynasty",
+    "verb": 5,
+    "object": "The Shang Dynasty",
+    "result": "defeat",
+    "epoch": 2
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Chou Dynasty",
+    "verb": 5,
+    "object": "The Shang Dynasty",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Chou Dynasty",
+    "verb": 1,
+    "object": "18",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "The Vedic City States",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Johan",
+    "actor": "The Vedic City States",
+    "verb": 3,
+    "object": "Kingdom: Etruscans",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Johan",
+    "actor": "The Vedic City States",
+    "verb": 1,
+    "object": "14",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "The Greek City States",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Greek City States",
+    "verb": 3,
+    "object": "Minor Empire: Phoenicia",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Greek City States",
+    "verb": 3,
+    "object": "Civil Service",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Greek City States",
+    "verb": 5,
+    "object": "The Minoans",
+    "result": "draw",
+    "epoch": 2
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Greek City States",
+    "verb": 5,
+    "object": "The Minoans",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Greek City States",
+    "verb": 1,
+    "object": "14",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "The Scythians",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 3,
+    "object": "Civil War",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 3,
+    "object": "Population Explosion",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 5,
+    "object": "Egypt",
+    "result": "defeat",
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 5,
+    "object": "Egypt",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 5,
+    "object": "Egypt",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 5,
+    "object": "The Scythians",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Scythians",
+    "verb": 1,
+    "object": "19",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "Persia",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Sumeria",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Sumeria",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Assyria",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Assyria",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Phoenicia",
+    "result": "defeat",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Phoenicia",
+    "result": "draw",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Phoenicia",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Phoenicia",
+    "result": "defeat",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Phoenicia",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Assyria",
+    "result": "draw",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 5,
+    "object": "Assyria",
+    "result": "win",
+    "epoch": 2
+  },
+  {
+    "player": "Jonas",
+    "actor": "Persia",
+    "verb": 1,
+    "object": "20",
+    "result": null,
+    "epoch": 2
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "The Celts",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Johan",
+    "actor": "The Celts",
+    "verb": 3,
+    "object": "Pestilence",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Johan",
+    "actor": "The Celts",
+    "verb": 5,
+    "object": "The Celts",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Johan",
+    "actor": "The Celts",
+    "verb": 5,
+    "object": "The Celts",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Johan",
+    "actor": "The Celts",
+    "verb": 5,
+    "object": "The Celts",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Johan",
+    "actor": "The Celts",
+    "verb": 5,
+    "object": "The Celts",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Johan",
+    "actor": "The Celts",
+    "verb": 1,
+    "object": "17",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "Macedonia",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 3,
+    "object": "Disaster",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "The Celts",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "Canaan",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "Canaan",
+    "result": "draw",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "Egypt",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "Egypt",
+    "result": "draw",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "Egypt",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 5,
+    "object": "The Celts",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": "Macedonia",
+    "verb": 1,
+    "object": "17",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "The Han Dynasty",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 3,
+    "object": "Siegecraft",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Chou Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Chou Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Chou Dynasty",
+    "result": "draw",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Chou Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Scythians",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Scythians",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Scythians",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 5,
+    "object": "The Chou Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Han Dynasty",
+    "verb": 1,
+    "object": "17",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "The Hsiung-Nu",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Hsiung-Nu",
+    "verb": 3,
+    "object": "Famine",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Hsiung-Nu",
+    "verb": 3,
+    "object": "Migrants: Australia",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Hsiung-Nu",
+    "verb": 5,
+    "object": "The Han Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Hsiung-Nu",
+    "verb": 5,
+    "object": "The Han Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Hsiung-Nu",
+    "verb": 5,
+    "object": "The Han Dynasty",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Hsiung-Nu",
+    "verb": 1,
+    "object": "18",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "The Romans",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 3,
+    "object": "Weaponry",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "draw",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "draw",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Romans",
+    "verb": 1,
+    "object": "35",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "The Sassanids",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 3,
+    "object": "Minor Empire: Mayans",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 3,
+    "object": "Allies",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "win",
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "defeat",
+    "epoch": 3
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Sassanids",
+    "verb": 1,
+    "object": "19",
+    "result": null,
+    "epoch": 3
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "The Guptas",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 3,
+    "object": "Disaster",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 3,
+    "object": "Civil War",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 5,
+    "object": "The Romans",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 5,
+    "object": "The Guptas",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 5,
+    "object": "The Guptas",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 5,
+    "object": "The Guptas",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Guptas",
+    "verb": 1,
+    "object": "19",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "The Goths",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 3,
+    "object": "Migrants: North America",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 3,
+    "object": "Expert Troops: Mountains",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 5,
+    "object": "The Goths",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 5,
+    "object": "The Goths",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 5,
+    "object": "The Goths",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 5,
+    "object": "The Goths",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 5,
+    "object": "The Goths",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Goths",
+    "verb": 1,
+    "object": "27",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "The Huns",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Huns",
+    "verb": 1,
+    "object": "17",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "The Byzantines",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 3,
+    "object": "Minor Empire: Anglo-Saxons",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 3,
+    "object": "Civil Service",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Johan",
+    "actor": "The Byzantines",
+    "verb": 1,
+    "object": "25",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "The T'ang Dynasty",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 3,
+    "object": "Jewish Revolt",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 3,
+    "object": "Astronomy",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 5,
+    "object": "Macedonia",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 5,
+    "object": "Macedonia",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 5,
+    "object": "The Han Dynasty",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 5,
+    "object": "The Hsiung-Nu",
+    "result": "draw",
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 5,
+    "object": "The Han Dynasty",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Jonas",
+    "actor": "The T'ang Dynasty",
+    "verb": 1,
+    "object": "25",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "The Arabs",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 3,
+    "object": "Allies",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 3,
+    "object": "Leader",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "defeat",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Arabs",
+    "verb": 1,
+    "object": "29",
+    "result": null,
+    "epoch": 4
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "The Vikings",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Vikings",
+    "verb": 3,
+    "object": "Leader",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Vikings",
+    "verb": 3,
+    "object": "Treachery",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Vikings",
+    "verb": 5,
+    "object": "The Vikings",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Vikings",
+    "verb": 5,
+    "object": "The Vikings",
+    "result": "draw",
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Vikings",
+    "verb": 5,
+    "object": "The Vikings",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Vikings",
+    "verb": 1,
+    "object": "31",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "The Holy Roman Empire",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 3,
+    "object": "Plague",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 3,
+    "object": "Population Explosion",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Huns",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 5,
+    "object": "The Vikings",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Holy Roman Empire",
+    "verb": 1,
+    "object": "27",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "The Chola Dynasty",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 3,
+    "object": "Barbarians",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 3,
+    "object": "Elite Troops",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 5,
+    "object": "The Vedic City States",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 5,
+    "object": "The Vedic City States",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 5,
+    "object": "The Hsiung-Nu",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 5,
+    "object": "The Hsiung-Nu",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Chola Dynasty",
+    "verb": 1,
+    "object": "18",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "The Sung Dynasty",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Sung Dynasty",
+    "verb": 3,
+    "object": "Minor Empire: Fujiwara",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Sung Dynasty",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "draw",
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Sung Dynasty",
+    "verb": 5,
+    "object": "The Chola Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Sung Dynasty",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Sung Dynasty",
+    "verb": 5,
+    "object": "The Han Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Sung Dynasty",
+    "verb": 1,
+    "object": "23",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "The Seljuk Turks",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 3,
+    "object": "Crusade",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 3,
+    "object": "Siegecraft",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Byzantines",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "draw",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The T'ang Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "Persia",
+    "result": "draw",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Sung Dynasty",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Sung Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Sung Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Sung Dynasty",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 5,
+    "object": "The Hsiung-Nu",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Seljuk Turks",
+    "verb": 1,
+    "object": "34",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "The Mongols",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 3,
+    "object": "Kingdom: Mali",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 3,
+    "object": "Weaponry",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "draw",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "defeat",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 5
+  },
+  {
+    "player": "Johan",
+    "actor": "The Mongols",
+    "verb": 1,
+    "object": "32",
+    "result": null,
+    "epoch": 5
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "The Ming Dynasty",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 3,
+    "object": "Leader",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 3,
+    "object": "Expert Troops: Forests",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Pontus",
+    "actor": "The Ming Dynasty",
+    "verb": 1,
+    "object": "38",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "The Timurid Emirates",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 3,
+    "object": "Engineering",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 3,
+    "object": "Leader",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "Kush",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "Kush",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "The Scythians",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "Kush",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "The Scythians",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 5,
+    "object": "The Ming Dynasty",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jonas",
+    "actor": "The Timurid Emirates",
+    "verb": 1,
+    "object": "27",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "The Incas",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Johan",
+    "actor": "The Incas",
+    "verb": 3,
+    "object": "Disaster",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Johan",
+    "actor": "The Incas",
+    "verb": 1,
+    "object": "31",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "The Ottoman Turks",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 3,
+    "object": "Black Death",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 3,
+    "object": "Kingdom: Thai",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 5,
+    "object": "The Ottoman Turks",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": "The Ottoman Turks",
+    "verb": 1,
+    "object": "28",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "Portugal",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 3,
+    "object": "Minor Empire: Safavids",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 3,
+    "object": "Jihad",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Safavids",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Safavids",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Incas",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Incas",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Incas",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Incas/Aztecs",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Ming Dynasty",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 5,
+    "object": "The Ming Dynasty",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Henrik",
+    "actor": "Portugal",
+    "verb": 1,
+    "object": "30",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "The Mughals",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 3,
+    "object": "Civil Service",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 3,
+    "object": "Leader",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "defeat",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "draw",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 6
+  },
+  {
+    "player": "Gustav",
+    "actor": "The Mughals",
+    "verb": 1,
+    "object": "37",
+    "result": null,
+    "epoch": 6
+  },
+  {
+    "player": "Jon ",
+    "actor": null,
+    "verb": 2,
+    "object": "Russia",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 3,
+    "object": "Astronomy",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 3,
+    "object": "Reallocation",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Timurid Emirates",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Anglo-Saxons",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Anglo-Saxons",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Anglo-Saxons",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Holy Roman Empire",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Holy Roman Empire",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Holy Roman Empire",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 1,
+    "object": "45",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jon ",
+    "actor": "Russia",
+    "verb": 4,
+    "object": "160",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": null,
+    "verb": 2,
+    "object": "The Manchu Dynasty",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 3,
+    "object": "Weaponry",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "Russia",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "Russia",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "The Mongols",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 5,
+    "object": "Russia",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 1,
+    "object": "49",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Henrik",
+    "actor": "The Manchu Dynasty",
+    "verb": 4,
+    "object": "152",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": null,
+    "verb": 2,
+    "object": "Netherlands",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 3,
+    "object": "Leader",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 3,
+    "object": "Naval Power",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 5,
+    "object": "Russia",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 5,
+    "object": "The Mughals",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 5,
+    "object": "The Holy Roman Empire",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 5,
+    "object": "The Holy Roman Empire",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 5,
+    "object": "The Holy Roman Empire",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 1,
+    "object": "29",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Johan",
+    "actor": "Netherlands",
+    "verb": 4,
+    "object": "154",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": null,
+    "verb": 2,
+    "object": "Britain",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 3,
+    "object": "Kingdom: Zimbabwe",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 3,
+    "object": "Elite Troops",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "Netherlands",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "Mali",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "Netherlands",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "Netherlands",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Chola Dynasty",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Chola Dynasty",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Manchu Dynasty",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Manchu Dynasty",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Manchu Dynasty",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Manchu Dynasty",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "The Manchu Dynasty",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 5,
+    "object": "Netherlands",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 1,
+    "object": "53",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Pontus",
+    "actor": "Britain",
+    "verb": 4,
+    "object": "184",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": null,
+    "verb": 2,
+    "object": "The United States",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 3,
+    "object": "Reallocation",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 3,
+    "object": "Treachery",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Portugal",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Fujiwara",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Britain",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Britain",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Britain",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Britain",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 5,
+    "object": "Britain",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 1,
+    "object": "40",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Gustav",
+    "actor": "The United States",
+    "verb": 4,
+    "object": "182",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": null,
+    "verb": 2,
+    "object": "Germany",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 3,
+    "object": "Reallocation",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 3,
+    "object": "Naval Power",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "The United States",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "The United States",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "Britain",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "Britain",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "The Arabs",
+    "result": "draw",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "African Migrants",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "Netherlands",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "The Sassanids",
+    "result": "win",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 5,
+    "object": "Britain",
+    "result": "defeat",
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 1,
+    "object": "43",
+    "result": null,
+    "epoch": 7
+  },
+  {
+    "player": "Jonas",
+    "actor": "Germany",
+    "verb": 4,
+    "object": "185",
+    "result": null,
+    "epoch": 7
+  }
+]
