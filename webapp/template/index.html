@@ -3,6 +3,7 @@
 <head>
     <title>Empires Games Stats</title>
     <link rel="stylesheet" href="bootswatch-yeti.min.css">
+    <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <style>
         .name {
             width: 150px;
@@ -184,6 +185,13 @@
                 </tbody>
             </table>
         </div>
+
+        <div class="col-md-12">
+            <h4>FORM</h4>
+            <div id="form-graph">
+
+            </div>
+        </div>
     </div>
 
     <div class="footer">
@@ -192,26 +200,123 @@
 
 </div> <!-- /container -->
 <script>
-    function generateBars(table) {
-        var bars = table.getElementsByClassName('bar');
+    (function() {
+        function generateBars(table) {
+            var bars = table.getElementsByClassName('bar');
 
-        var i = 0, l = bars.length, obj, topp = 0, newwidth;
-        var size = bars[i].parentElement.getBoundingClientRect().width - 35;
-        // find out top value
-        for (; i < l; i++) {
-            topp = parseInt(bars[i].dataset.value) > topp ? parseInt(bars[i].dataset.value) : topp;
-            console.log('(top)', topp);
+            var i = 0, l = bars.length, topp = 0;
+            var size = bars[i].parentElement.getBoundingClientRect().width - 35;
+            // find out top value
+            for (; i < l; i++) {
+                topp = parseInt(bars[i].dataset.value) > topp ? parseInt(bars[i].dataset.value) : topp;
+                console.log('(top)', topp);
+            }
+            i = 0;
+            for (; i < l; i++) {
+                bars[i].style.width = ((bars[i].dataset.value/topp) * size) + 'px';
+            }
         }
-        i = 0;
-        for (; i < l; i++) {
-            bars[i].style.width = ((bars[i].dataset.value/topp) * size) + 'px';
-        }
-    }
 
-    generateBars(document.getElementsByTagName('table')[1]);
-    generateBars(document.getElementsByTagName('table')[2]);
-    generateBars(document.getElementsByTagName('table')[3]);
-    generateBars(document.getElementsByTagName('table')[4]);
+        generateBars(document.getElementsByTagName('table')[1]);
+        generateBars(document.getElementsByTagName('table')[2]);
+        generateBars(document.getElementsByTagName('table')[3]);
+        generateBars(document.getElementsByTagName('table')[4]);
+
+        var formData = [
+            {
+                name: 'Johan',
+                form: [
+                    { y: 154, x: 1 },
+                    { y: 176, x: 2 },
+                    { y: 180, x: 3 },
+                    { y: 156, x: 4 },
+                    { y: 152, x: 5 }
+                ],
+                color: '#D96383'
+            },
+            {
+                name: 'Jonas',
+                form: [
+                    { y: 189, x: 1 },
+                    { y: 190, x: 2 },
+                    { y: 175, x: 3 },
+                    { y: 167, x: 4 },
+                    { y: 180, x: 5 }
+                ],
+                color: '#CF5C60'
+            },
+            {
+                name: 'Gustav',
+                form: [
+                    { y: 167, x: 1 },
+                    { y: 169, x: 2 },
+                    { y: 175, x: 3 },
+                    { y: 180, x: 4 },
+                    { y: 190, x: 5 }
+                ],
+                color: '#F3AE4E'
+            },
+            {
+                name: 'Pontus',
+                form: [
+                    { y: 200, x: 1 },
+                    { y: 176, x: 2 },
+                    { y: 160, x: 3 },
+                    { y: 203, x: 4 },
+                    { y: 164, x: 5 }
+                ],
+                color: '#4AB471'
+            },
+            {
+                name: 'Henrik',
+                form: [
+                    { y: 203, x: 1 },
+                    { y: 194, x: 2 },
+                    { y: 186, x: 3 },
+                    { y: 176, x: 4 },
+                    { y: 190, x: 5 }
+                ],
+                color: '#4EB1CB'
+            }
+        ];
+
+        var w = document.getElementById('form-graph').getBoundingClientRect().width;
+        var h = 320;
+
+        console.log('svg width: ' + w);
+
+        var y = d3.scale.linear().domain([210, 140]).range([0, h]);
+        var x = d3.scale.linear().domain([0.9, 5.1]).range([0, w]);
+
+        var lineFunction = d3.svg.line()
+                .x(function(d) { return x(d.x); })
+                .y(function(d) { return y(d.y); })
+                .interpolate('monotone');
+
+        var svgContainer = d3.select('#form-graph').append('svg')
+                .attr('width', w)
+                .attr('height', h);
+
+        var group = null;
+
+        formData.forEach(function(player) {
+            group = svgContainer.append('g');
+            group.append('path')
+                .attr('d', lineFunction(player.form))
+                .attr('stroke', player.color)
+                .attr('stroke-width', 2)
+                .attr('fill', 'none');
+            group.selectAll('circle')
+                 .data(player.form)
+                 .enter()
+                 .append('circle')
+                 .attr('cx', function(d) { return x(d.x); })
+                 .attr('cy', function(d) { return y(d.y); })
+                 .attr('r', 3)
+                 .style('fill', player.color);
+        });
+    }());
+
 </script>
 </body>
 </html>
