@@ -41,6 +41,23 @@
             font-size: 14pt;
             font-weight: normal;
         }
+        .axis text {
+          font: 10px sans-serif;
+        }
+
+        .axis line,
+        .axis path {
+          fill: none;
+          shape-rendering: crispEdges;
+        }
+
+        .axis line {
+            stroke: #ccc;
+        }
+
+        .axis.y line {
+            stroke: #eeeeee;
+        }
     </style>
 </head>
 <body>
@@ -281,12 +298,12 @@
         ];
 
         var w = document.getElementById('form-graph').getBoundingClientRect().width;
-        var h = 320;
+        var h = 350;
 
         console.log('svg width: ' + w);
 
-        var y = d3.scale.linear().domain([210, 140]).range([0, h]);
-        var x = d3.scale.linear().domain([0.9, 5.1]).range([0, w]);
+        var y = d3.scale.linear().domain([215, 145]).range([0, h]);
+        var x = d3.scale.linear().domain([0.8, 5.1]).range([0, w]);
 
         var lineFunction = d3.svg.line()
                 .x(function(d) { return x(d.x); })
@@ -296,6 +313,26 @@
         var svgContainer = d3.select('#form-graph').append('svg')
                 .attr('width', w)
                 .attr('height', h);
+
+        var xAxis = d3.svg.axis().scale(x).ticks(5).tickFormat(function(d) { return 'game ' + d });
+        var yAxis = d3.svg.axis().scale(y).ticks(10).tickSize(w).orient('right');
+
+        svgContainer.append('g')
+                .attr('class', 'x axis')
+                .attr('transform', 'translate(0,' + (h - 25) + ')')
+                .call(xAxis)
+                .selectAll('text')
+                .attr('y', 10)
+                .attr('x', -12)
+                .style('text-anchor', 'start');
+
+        svgContainer.append('g')
+                .attr('class', 'y axis')
+                .call(yAxis)
+                .selectAll('text')
+                .attr('y', -7)
+                .attr('x', 5)
+                .style('text-anchor', 'start');
 
         var group = null;
 
@@ -315,6 +352,8 @@
                 .attr('r', 3)
                 .style('fill', player.color);
         });
+
+
     }());
 
 </script>
