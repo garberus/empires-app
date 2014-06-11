@@ -7,6 +7,10 @@
  * digestible JSON data for the web app.
  * Usage:
  *        node aggregator.js
+ * Data needed:
+ *  - Version 1
+ *    Summaries of: max score (avg score), total cards played, max winning score
+ *    Per player: max score, total wins, total score, won battles, score per game
  */
 
 var CONFIG = require('./src/static/config.json');

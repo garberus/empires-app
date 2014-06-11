@@ -10,6 +10,8 @@
         }
         .bar {
             height: 12px;
+            margin: 3px 6px 0 0;
+            float: left;
         }
         .post {
             background-color: #4EB1CB;
@@ -97,23 +99,23 @@
                 <tbody>
                 <tr>
                     <td class="name">Henrik</td>
-                    <td><div class="bar post" data-value="3"></div></td>
+                    <td><div class="bar post" data-value="3"></div>3</td>
                 </tr>
                 <tr>
                     <td>Jonas</td>
-                    <td><div class="bar thanks" data-value="2"></div></td>
+                    <td><div class="bar thanks" data-value="2"></div>2</td>
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar opportunity" data-value="2"></div></td>
+                    <td><div class="bar opportunity" data-value="2"></div>2</td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
-                    <td><div class="bar task" data-value="1"></div></td>
+                    <td><div class="bar task" data-value="1"></div>1</td>
                 </tr>
                 <tr>
                     <td>Johan</td>
-                    <td><div class="bar event" data-value="0"></div></td>
+                    <td><div class="bar event" data-value="0"></div>0</td>
                 </tr>
                 </tbody>
             </table>
@@ -125,23 +127,23 @@
                 <tbody>
                 <tr>
                     <td class="name">Henrik</td>
-                    <td><div class="bar post" data-value="1542"></div></td>
+                    <td><div class="bar post" data-value="1542"></div>1542</td>
                 </tr>
                 <tr>
                     <td>Jonas</td>
-                    <td><div class="bar thanks" data-value="1365"></div></td>
+                    <td><div class="bar thanks" data-value="1365"></div>1365</td>
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar opportunity" data-value="1289"></div></td>
+                    <td><div class="bar opportunity" data-value="1289"></div>1289</td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
-                    <td><div class="bar task" data-value="1167"></div></td>
+                    <td><div class="bar task" data-value="1167"></div>1167</td>
                 </tr>
                 <tr>
                     <td>Johan</td>
-                    <td><div class="bar event" data-value="1089"></div></td>
+                    <td><div class="bar event" data-value="1089"></div>1089</td>
                 </tr>
                 </tbody>
             </table>
@@ -153,23 +155,23 @@
                 <tbody>
                 <tr>
                     <td class="name">Henrik</td>
-                    <td><div class="bar post" data-value="208"></div></td>
+                    <td><div class="bar post" data-value="208"></div>208</td>
                 </tr>
                 <tr>
                     <td>Jonas</td>
-                    <td><div class="bar thanks" data-value="205"></div></td>
+                    <td><div class="bar thanks" data-value="205"></div>205</td>
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar opportunity" data-value="193"></div></td>
+                    <td><div class="bar opportunity" data-value="193"></div>193</td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
-                    <td><div class="bar task" data-value="186"></div></td>
+                    <td><div class="bar task" data-value="186"></div>186</td>
                 </tr>
                 <tr>
                     <td>Johan</td>
-                    <td><div class="bar event" data-value="179"></div></td>
+                    <td><div class="bar event" data-value="179"></div>179</td>
                 </tr>
                 </tbody>
             </table>
@@ -181,23 +183,23 @@
                 <tbody>
                 <tr>
                     <td class="name">Henrik</td>
-                    <td><div class="bar post" data-value="614"></div></td>
+                    <td><div class="bar post" data-value="614"></div>614</td>
                 </tr>
                 <tr>
                     <td>Jonas</td>
-                    <td><div class="bar thanks" data-value="580"></div></td>
+                    <td><div class="bar thanks" data-value="580"></div>580</td>
                 </tr>
                 <tr>
                     <td>Gustav</td>
-                    <td><div class="bar opportunity" data-value="570"></div></td>
+                    <td><div class="bar opportunity" data-value="570"></div>570</td>
                 </tr>
                 <tr>
                     <td>Pontus</td>
-                    <td><div class="bar task" data-value="450"></div></td>
+                    <td><div class="bar task" data-value="450"></div>450</td>
                 </tr>
                 <tr>
                     <td>Johan</td>
-                    <td><div class="bar event" data-value="425"></div></td>
+                    <td><div class="bar event" data-value="425"></div>425</td>
                 </tr>
                 </tbody>
             </table>
@@ -222,7 +224,7 @@
             var bars = table.getElementsByClassName('bar');
 
             var i = 0, l = bars.length, topp = 0;
-            var size = bars[i].parentElement.getBoundingClientRect().width - 35;
+            var size = bars[i].parentElement.getBoundingClientRect().width - 55;
             // find out top value
             for (; i < l; i++) {
                 topp = parseInt(bars[i].dataset.value) > topp ? parseInt(bars[i].dataset.value) : topp;
