@@ -2,7 +2,7 @@
 <html>
 <head>
     <title>Empires Games Stats</title>
-    <link rel="stylesheet" href="bootswatch-yeti.min.css">
+    <link rel="stylesheet" href="bootswatch-flatly.min.css">
     <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
     <style>
         .name {
@@ -224,7 +224,7 @@
             var bars = table.getElementsByClassName('bar');
 
             var i = 0, l = bars.length, topp = 0;
-            var size = bars[i].parentElement.getBoundingClientRect().width - 55;
+            var size = bars[i].parentElement.getBoundingClientRect().width - 100;
             // find out top value
             for (; i < l; i++) {
                 topp = parseInt(bars[i].dataset.value) > topp ? parseInt(bars[i].dataset.value) : topp;

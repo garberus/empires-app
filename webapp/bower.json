@@ -1,0 +1,26 @@
+{
+  "name": "empires-app-webapp",
+  "version": "0.0.0",
+  "homepage": "https://github.com/garberus/empires-app",
+  "authors": [
+    "garberus <https://github.com/garberus>"
+  ],
+  "description": "Front-end of empires leaderboard",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "dist"
+  ],
+  "dependencies": {
+    "angular-latest": "~1.2.18",
+    "angular": "~1.2.18",
+    "angular-route": "~1.2.18",
+    "d3": "~3.4.8"
+  }
+}

@@ -1,0 +1,56 @@
+.name {
+  width: 150px;
+}
+.bar {
+  height: 12px;
+  margin: 3px 6px 0 0;
+  float: left;
+}
+.post {
+  background-color: #4EB1CB;
+}
+.thanks {
+  background-color: #CF5C60;
+}
+.account {
+  background-color: #717ECD;
+}
+.task {
+  background-color: #4AB471;
+}
+.opportunity {
+  background-color: #F3AE4E;
+}
+.event {
+  background-color: #D96383;
+}
+.spacing {
+  margin-bottom: 35px;
+}
+.stats-table td {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.stats-table td span {
+  font-size: 14pt;
+  font-weight: normal;
+}
+
+.axis text {
+  font: 10px sans-serif;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  shape-rendering: crispEdges;
+}
+
+.axis line {
+  stroke: #ccc;
+}
+
+.axis.y line {
+  stroke: #eeeeee;
+}
