@@ -1,0 +1,11 @@
+<h4>{{heading}}</h4>
+<table class="table">
+    <tbody>
+    <tr ng-repeat="player in scores">
+        <td class="name">{{player.name}}</td>
+        <td class="value"><div class="bar"
+                 style="background-color: {{player.color}}; width: {{player.width}}%"></div>
+            {{player.value}}</td>
+    </tr>
+    </tbody>
+</table>

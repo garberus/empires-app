@@ -5,7 +5,15 @@
 var CONST = {
   CHART_HEIGHT: 350,
   CHART_INTERPOLATION: 'monotone',
-  X_LABEL: 'game'
+  X_LABEL: 'game',
+  BARCHART_NUMBER_SPACING: 200
+};
+
+var BARCHART_TYPE = {
+  MOST_WINS: 'wins',
+  MOST_POINTS: 'point',
+  MOST_POINTS_IN_A_GAME: 'game',
+  MOST_BATTLES_WON: 'battles'
 };
 
 var directives = angular.module('EmpiresApp.directives', []);
@@ -13,11 +21,11 @@ var directives = angular.module('EmpiresApp.directives', []);
 /**
  * The chart directive / will generate a chart with data from the last five games.
  * Usage:
- *    <chart></chart>
+ *    <formchart></formchart>
  */
-directives.directive('chart', ['dataService', 'd3injectionService', '$document',
+directives.directive('formchart', ['dataService', 'd3injectionService',
 
-  function(dataService, d3Service, $document) {
+  function(dataService, d3Service) {
 
     return {
 
@@ -44,10 +52,19 @@ directives.directive('chart', ['dataService', 'd3injectionService', '$document',
             .attr('width', w)
             .attr('height', h);
 
+          var tip = d3.tip()
+            .attr('class', 'd3-tip')
+            .offset([-10, 0])
+            .html(function(d) {
+              return '' + d.y + '';
+            });
+
           var xAxis = d3.svg.axis().scale(x).ticks(5).tickFormat(function(d) {
             return CONST.X_LABEL + ' ' + d;
           });
           var yAxis = d3.svg.axis().scale(y).ticks(10).tickSize(w).orient('right');
+
+          svgContainer.call(tip);
 
           svgContainer.append('g')
             .attr('class', 'x axis')
@@ -82,13 +99,15 @@ directives.directive('chart', ['dataService', 'd3injectionService', '$document',
               .attr('cx', function(d) { return x(d.x); })
               .attr('cy', function(d) { return y(d.y); })
               .attr('r', 3)
-              .style('fill', player.color);
+              .style('fill', player.color)
+              .on('mouseover', tip.show)
+              .on('mouseout', tip.hide);
           });
 
         };
 
-        d3Service.inject(function(error, d3) {
-          $scope.render(d3);
+        d3Service.inject(function(error, d3, d3Tip) {
+          $scope.render(d3, d3Tip);
         });
 
       },
@@ -97,6 +116,116 @@ directives.directive('chart', ['dataService', 'd3injectionService', '$document',
       scope: {
         ngModel: '='
       }
+    }
+  }
+]);
+
+/**
+ * The barchart directive / will generate a barchart with data dependent on the
+ * type attribute.
+ * Usage:
+ *    <barchart ng-type="<type>"></barchart>
+ */
+directives.directive('barchart', ['dataService',
+
+  function(dataService) {
+
+    return {
+
+      controller: function($scope) {
+
+        $scope.renderWinsBarchart = function renderWinsBarchart() {
+
+          $scope.heading = 'Most wins';
+
+          dataService.getStaticBarChartData(function(error, data) {
+
+            var max = $scope._calculateBarMaxValue(data);
+            var i = 0, l = data.length;
+            for (; i < l; i++) {
+              data[i].width = $scope._calculateBarWidth(parseInt(data[i].value), max);
+            }
+            $scope.scores = data;
+          });
+
+        };
+
+        $scope._calculateBarWidth = function calculateBarWidth(value, t) {
+          return Math.round(value/t*100) - 10;
+        };
+
+        $scope._calculateBarMaxValue = function calculateBarWidth(scores) {
+          var i = 0, l = scores.length, max = 0;
+          for (; i < l; i++) {
+            max = parseInt(scores[i].value) > max ? parseInt(scores[i].value) : max;
+          }
+          return max;
+        };
+
+      },
+
+      link: function($scope, iElement, iAttrs) {
+
+        console.log('(EmpiresApp.directives.barchart) started...', iElement);
+
+        switch(iAttrs.ngType) {
+
+          case BARCHART_TYPE.MOST_WINS:
+              $scope.renderWinsBarchart();
+            break;
+
+        }
+
+      },
+
+      restrict: 'E',
+      scope: {
+        ngModel: '='
+      },
+      templateUrl: 'views/partials/barchart.html'
+    }
+  }
+]);
+
+/**
+ * The statstable directive / will generate a stats table with data.
+ * Usage:
+ *    <statstable></statstable>
+ */
+directives.directive('statstable', ['dataService',
+
+  function(dataService) {
+
+    return {
+
+      controller: function($scope) {
+
+        $scope.render = function render() {
+
+          dataService.getStaticStatsTableData(function(error, data) {
+
+            $scope.highestPoints = data.highestPoints || 209;
+            $scope.averagePoints = data.averagePoints || 170;
+            $scope.cardsPlayed = data.cardsPlayed || 4.567;
+            $scope.battlesFought = data.battlesFought || 10.567;
+
+          });
+        };
+      },
+
+      link: function($scope, iElement, iAttrs) {
+
+        console.log('(EmpiresApp.directives.statstable) started...', iElement);
+
+        $scope.render();
+
+      },
+
+      restrict: 'E',
+      scope: {
+        ngModel: '='
+      },
+      templateUrl: 'views/partials/stats-table.html'
     }
   }
 ]);

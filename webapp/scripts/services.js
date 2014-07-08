@@ -57,16 +57,54 @@ services.service('scriptInjector', ['$document', '$q', '$rootScope',
 
 services.service('d3injectionService', ['scriptInjector', function(injector) {
   this.inject = function inject(cb) {
-    injector.inject('http://d3js.org/d3.v3.min.js', 'd3', function(promise) {
-      promise.then(function(d3) {
-        console.log('(EmpiresApp.services.jsonDataService) d3 available');
-        cb(null, d3);
+    injector.inject('http://d3js.org/d3.v3.min.js', 'd3', function(d3promise) {
+      d3promise.then(function(d3) {
+        injector.inject('./bower_components/d3-tip/index.js', 'd3tip', function(tipPromise) {
+          tipPromise.then(function(d3Tip) {
+            console.log('(EmpiresApp.services.jsonDataService) d3 available');
+            cb(null, d3, d3Tip);
+          })
+        });
       });
     });
   };
 }]);
 
 services.service('dataService', ['$http', function($http) {
+
+  this.getStaticStatsTableData = function getStaticStatsTableData(cb) {
+    cb(null, {});
+  };
+
+  this.getStaticBarChartData = function getStaticBarchartData(cb) {
+    cb(null, [
+      {
+        name: 'Johan',
+        value: '0',
+        color: '#D96383'
+      },
+      {
+        name: 'Jonas',
+        value: '2',
+        color: '#CF5C60'
+      },
+      {
+        name: 'Gustav',
+        value: '2',
+        color: '#F3AE4E'
+      },
+      {
+        name: 'Pontus',
+        value: '1',
+        color: '#4AB471'
+      },
+      {
+        name: 'Henrik',
+        value: '3',
+        color: '#4EB1CB'
+      }
+    ]);
+  };
 
   this.getStaticData = function getStaticData() {
     return [{
