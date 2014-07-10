@@ -46,8 +46,31 @@ fs.readdir(__dirname + '/' + CONFIG.OUTPUT_DIR, function(err, files) {
        */
 
 
+
     }
 
   });
 
 });
+
+
+
+/**
+ * Aggregates stats for the stats table.
+ */
+var _aggregateStats = function() {
+
+  var statsTable = {};
+
+  // highest score
+  statsTable['highest_points'] = this.getHighestScores()[0].points;
+  // most wins
+  statsTable['average_points'] = this.getAverageScore();
+  // most points
+  statsTable['cards_played'] = this._cards;
+  // battles
+  statsTable['battles_fought'] = this._battles;
+
+  return statsTable;
+
+};

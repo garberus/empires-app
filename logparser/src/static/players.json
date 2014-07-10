@@ -1,11 +1,11 @@
 [
   {
     "name":"Johan",
-    "color":"#E5807B"
+    "color":"#D96383"
   },
   {
     "name":"Jon ",
-    "color":"#929E78"
+    "color":"#CF5C60"
   },
   {
     "name":"Gustav",
@@ -13,11 +13,11 @@
   },
   {
     "name":"Henrik",
-    "color":"#E69660"
+    "color":"#F3AE4E"
   },
   {
     "name":"Eric",
-    "color":"#96AAAF"
+    "color":"#4AB471"
   },
   {
     "name":"Jonas",
@@ -25,6 +25,6 @@
   },
   {
     "name":"Pontus",
-    "color": "#A98CA0"
+    "color": "#4EB1CB"
   }
 ]

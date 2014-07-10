@@ -11,7 +11,7 @@ var CONST = {
 
 var BARCHART_TYPE = {
   MOST_WINS: 'wins',
-  MOST_POINTS: 'point',
+  MOST_POINTS: 'points',
   MOST_POINTS_IN_A_GAME: 'game',
   MOST_BATTLES_WON: 'battles'
 };

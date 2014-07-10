@@ -5,6 +5,8 @@
 var expect = require('expectacle');
 var ViewAggregator = require('../logparser/src/viewaggregator.js').ViewAggregator;
 
+var PLAYERS = require('../logparser/src/static/players.json');
+
 var game1 = require('./testdata_19');
 var game2 = require('./testdata_20');
 
@@ -12,6 +14,14 @@ ViewAggregator.processGameData('game_1', game1);
 ViewAggregator.processGameData('game_2', game2);
 
 describe('ViewAggregator', function() {
+
+  describe('configuration', function() {
+
+    it('should filter static player data', function() {
+      expect(ViewAggregator.getPlayerColor(PLAYERS[0].name)).toBe(PLAYERS[0].color);
+    });
+
+  });
 
   describe('listing games', function() {
 
@@ -22,6 +32,32 @@ describe('ViewAggregator', function() {
     it('should return an array of two games from supplied test data', function() {
       expect(ViewAggregator.getGameData()).toBeArray();
       expect(ViewAggregator.getGameData().length).toBe(2);
+    });
+
+  });
+
+  describe('game stats', function() {
+
+    it('should return basic aggregated statistics', function() {
+      expect(ViewAggregator.getBattlesFought()).toBe(523);
+      expect(ViewAggregator.getCardsPlayed()).toBe(119);
+    });
+
+    it('should correctly report the highest points in a game', function() {
+      expect(ViewAggregator.getHighestScores()).toBeArray();
+      expect(ViewAggregator.getHighestScores().length).toBe(6);
+      expect(ViewAggregator.getHighestScores()[0].name).toBe('Pontus');
+      expect(ViewAggregator.getHighestScores()[0].points).toBe(189);
+      expect(ViewAggregator.getHighestScores()[1].name).toBe('Jonas');
+      expect(ViewAggregator.getHighestScores()[1].points).toBe(185);
+    });
+
+    it('should report an average score', function() {
+      expect(ViewAggregator.getAverageScore()).toBe(173);
+    });
+
+    it('should report an average winning score', function() {
+      expect(ViewAggregator.getAverageWinningScore()).toBe(187);
     });
 
   });
@@ -46,15 +82,6 @@ describe('ViewAggregator', function() {
     it('should correctly report the player with the second most points', function() {
       expect(ViewAggregator.getTotalPoints()[1].name).toBe('Jonas');
       expect(ViewAggregator.getTotalPoints()[1].points).toBe(360);
-    });
-
-    it('should correctly report the highest points in a game', function() {
-      expect(ViewAggregator.getHighestScores()).toBeArray();
-      expect(ViewAggregator.getHighestScores().length).toBe(6);
-      expect(ViewAggregator.getHighestScores()[0].name).toBe('Pontus');
-      expect(ViewAggregator.getHighestScores()[0].points).toBe(189);
-      expect(ViewAggregator.getHighestScores()[1].name).toBe('Jonas');
-      expect(ViewAggregator.getHighestScores()[1].points).toBe(185);
     });
 
   });

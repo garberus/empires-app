@@ -21,6 +21,10 @@ var ViewAggregator = function() {
   this._totalCache = {};
   this._highScoreCache = {};
   this._epochCache = [];
+  this._battles = 0;
+  this._cards = 0;
+  this._totalScore = 0;
+  this._totalFinalScore = 0;
 
 };
 
@@ -51,6 +55,8 @@ ViewAggregator.prototype.processGameData = function(id, data, cb) {
     if (action.verb === CONFIG.VERBS.FINAL_SCORE) {
 
       pts = parseInt(action.object);
+
+      _this._totalFinalScore += pts;
 
       game.scores.push({
         name: action.player,
@@ -102,6 +108,14 @@ ViewAggregator.prototype.processGameData = function(id, data, cb) {
 
       _this._epochCache[currentEpoch] = epochData;
 
+    }
+
+    if (action.verb === CONFIG.VERBS.PLAYED_CARD) {
+      _this._cards++;
+    }
+
+    if (action.verb === CONFIG.VERBS.BATTLE_HAPPENED) {
+      _this._battles++;
     }
 
   });
@@ -182,7 +196,7 @@ ViewAggregator.prototype._convertObjectAndSort = function(obj) {
   var arr = [];
 
   for (var player in obj) {
-    arr.push({name: player, points: obj[player]});
+    arr.push({name: player, points: obj[player], color: this.getPlayerColor(player)});
   }
 
   return arr.sort(function(a, b) {
@@ -223,6 +237,67 @@ ViewAggregator.prototype.getScoreForEpoch = function(index) {
   } else {
     return this._epochCache;
   }
+
+};
+
+/**
+ * Retrieves the color value the player is associated with.
+ * @param {string} player The name of the player.
+ * @returns {*}
+ */
+ViewAggregator.prototype.getPlayerColor = function(player) {
+
+  var i = 0, l = PLAYERS.length, color = null;
+
+  for (; i < l; i++) {
+     if (PLAYERS[i].name === player) color = PLAYERS[i].color;
+  }
+
+  return color;
+
+};
+
+/**
+ * Return the number of cards played in this game.
+ */
+ViewAggregator.prototype.getCardsPlayed = function() {
+
+  return this._cards;
+
+};
+
+/**
+ * Return the number of cards played in this game.
+ */
+ViewAggregator.prototype.getBattlesFought = function() {
+
+  return this._battles;
+
+};
+
+/**
+ * Return the average score of processed games.
+ */
+ViewAggregator.prototype.getAverageScore = function() {
+
+  return Math.round(this._totalFinalScore/this._gameReports.length/6);
+
+};
+
+/**
+ * Return the average winning score of processed games.
+ */
+ViewAggregator.prototype.getAverageWinningScore = function() {
+
+  var winning = 0;
+
+  this._gameReports.forEach(function(game) {
+
+    winning += game.scores[0].score;
+
+  });
+
+  return Math.round(winning/this._gameReports.length);
 
 };
 
