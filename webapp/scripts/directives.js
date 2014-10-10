@@ -6,7 +6,8 @@ var CONST = {
   CHART_HEIGHT: 350,
   CHART_INTERPOLATION: 'monotone',
   X_LABEL: 'game',
-  BARCHART_NUMBER_SPACING: 200
+  BARCHART_NUMBER_SPACING: 200,
+  X_TICKS: 5
 };
 
 var BARCHART_TYPE = {
@@ -23,24 +24,22 @@ var directives = angular.module('EmpiresApp.directives', []);
  * Usage:
  *    <formchart></formchart>
  */
-directives.directive('formchart', ['dataService', 'd3injectionService',
+directives.directive('formchart', ['dataService',
 
-  function(dataService, d3Service) {
+  function(dataService) {
 
     return {
 
       link: function($scope, iElement, iAttrs) {
 
-        console.log('(EmpiresApp.directives.chart) chart detected', iElement);
-
         var w = iElement[0].parentElement.getBoundingClientRect().width;
         var h = CONST.CHART_HEIGHT;
 
-        var formData = dataService.getStaticData();
+        $scope.render = function render(formData) {
 
-        $scope.render = function render(d3) {
+          var gp = formData[0].form.length;
 
-          var y = d3.scale.linear().domain([215, 145]).range([0, h]);
+          var y = d3.scale.linear().domain([215, 130]).range([0, h]);
           var x = d3.scale.linear().domain([0.8, 5.1]).range([0, w]);
 
           var lineFunction = d3.svg.line()
@@ -56,11 +55,11 @@ directives.directive('formchart', ['dataService', 'd3injectionService',
             .attr('class', 'd3-tip')
             .offset([-10, 0])
             .html(function(d) {
-              return '' + d.y + '';
+              return d.y;
             });
 
-          var xAxis = d3.svg.axis().scale(x).ticks(5).tickFormat(function(d) {
-            return CONST.X_LABEL + ' ' + d;
+          var xAxis = d3.svg.axis().scale(x).ticks(CONST.X_TICKS).tickFormat(function(d) {
+            return CONST.X_LABEL + ' ' + (d - CONST.X_TICKS + gp);
           });
           var yAxis = d3.svg.axis().scale(y).ticks(10).tickSize(w).orient('right');
 
@@ -106,8 +105,8 @@ directives.directive('formchart', ['dataService', 'd3injectionService',
 
         };
 
-        d3Service.inject(function(error, d3, d3Tip) {
-          $scope.render(d3, d3Tip);
+        dataService.getGameData('form', function(data) {
+          $scope.render(data);
         });
 
       },
@@ -138,26 +137,98 @@ directives.directive('barchart', ['dataService',
 
           $scope.heading = 'Most wins';
 
-          dataService.getStaticBarChartData(function(error, data) {
+          dataService.getGameData('most_wins', function(data) {
 
-            var max = $scope._calculateBarMaxValue(data);
-            var i = 0, l = data.length;
-            for (; i < l; i++) {
-              data[i].width = $scope._calculateBarWidth(parseInt(data[i].value), max);
+            if (data) {
+
+              var max = $scope._calculateBarMaxValue(data);
+              var i = 0, l = data.length;
+              for (; i < l; i++) {
+                data[i].width =
+                    $scope._calculateBarWidth(parseInt(data[i].wins), max);
+                data[i].value = data[i].wins;
+              }
+              $scope.scores = data;
             }
-            $scope.scores = data;
+
+          });
+
+        };
+
+        $scope.renderPointsBarchart = function renderPointsBarchart() {
+
+          $scope.heading = 'Most points';
+
+          dataService.getGameData('most_points', function(data) {
+
+            if (data) {
+
+              var max = $scope._calculateBarMaxValue(data);
+              var i = 0, l = data.length;
+              for (; i < l; i++) {
+                data[i].width =
+                  $scope._calculateBarWidth(parseInt(data[i].points), max);
+                data[i].value = data[i].points;
+              }
+              $scope.scores = data;
+            }
+
+          });
+
+        };
+
+        $scope.renderBattlesBarchart = function renderBattlesBarchart() {
+
+          $scope.heading = 'Most battles won';
+
+          dataService.getGameData('battle_data', function(data) {
+
+            if (data) {
+
+              var max = $scope._calculateBarMaxValue(data);
+              var i = 0, l = data.length;
+              for (; i < l; i++) {
+                data[i].width =
+                  $scope._calculateBarWidth(parseInt(data[i].wins), max);
+                data[i].value = data[i].wins;
+              }
+              $scope.scores = data;
+            }
+
+          });
+
+        };
+
+        $scope.renderPointsInGameBarchart = function renderPointsInGameBarchart() {
+
+          $scope.heading = 'Most points in a game';
+
+          dataService.getGameData('most_points_game', function(data) {
+
+            if (data) {
+
+              var max = $scope._calculateBarMaxValue(data);
+              var i = 0, l = data.length;
+              for (; i < l; i++) {
+                data[i].width =
+                  $scope._calculateBarWidth(parseInt(data[i].points), max);
+                data[i].value = data[i].points;
+              }
+              $scope.scores = data;
+            }
+
           });
 
         };
 
         $scope._calculateBarWidth = function calculateBarWidth(value, t) {
-          return Math.round(value/t*100) - 10;
+          return Math.round(value/t*100) - 20;
         };
 
         $scope._calculateBarMaxValue = function calculateBarWidth(scores) {
           var i = 0, l = scores.length, max = 0;
           for (; i < l; i++) {
-            max = parseInt(scores[i].value) > max ? parseInt(scores[i].value) : max;
+            max = parseInt(scores[i].wins || scores[i].points) > max ? parseInt(scores[i].wins || scores[i].points) : max;
           }
           return max;
         };
@@ -166,12 +237,22 @@ directives.directive('barchart', ['dataService',
 
       link: function($scope, iElement, iAttrs) {
 
-        console.log('(EmpiresApp.directives.barchart) started...', iElement);
-
         switch(iAttrs.ngType) {
 
           case BARCHART_TYPE.MOST_WINS:
               $scope.renderWinsBarchart();
+            break;
+
+          case BARCHART_TYPE.MOST_POINTS:
+            $scope.renderPointsBarchart();
+            break;
+
+          case BARCHART_TYPE.MOST_BATTLES_WON:
+            $scope.renderBattlesBarchart();
+            break;
+
+          case BARCHART_TYPE.MOST_POINTS_IN_A_GAME:
+            $scope.renderPointsInGameBarchart();
             break;
 
         }
@@ -202,20 +283,26 @@ directives.directive('statstable', ['dataService',
 
         $scope.render = function render() {
 
-          dataService.getStaticStatsTableData(function(error, data) {
-
-            $scope.highestPoints = data.highestPoints || 209;
-            $scope.averagePoints = data.averagePoints || 170;
-            $scope.cardsPlayed = data.cardsPlayed || 4.567;
-            $scope.battlesFought = data.battlesFought || 10.567;
-
+          dataService.getGameData('highest_scores', function(p) {
+            $scope.highestPoints = p || 0;
           });
+
+          dataService.getGameData('average_points', function(p) {
+            $scope.averagePoints = p || 0;
+          });
+
+          dataService.getGameData('cards_played', function(p) {
+            $scope.cardsPlayed = p || 0;
+          });
+
+          dataService.getGameData('battles_fought', function(p) {
+            $scope.battlesFought = p || 0;
+          });
+
         };
       },
 
       link: function($scope, iElement, iAttrs) {
-
-        console.log('(EmpiresApp.directives.statstable) started...', iElement);
 
         $scope.render();
 

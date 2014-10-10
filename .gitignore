@@ -30,3 +30,6 @@ bower_components
 
 # Output directory
 logparser/output
+webapp/data
+dist
+.tmp

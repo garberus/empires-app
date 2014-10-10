@@ -152,7 +152,7 @@ LogReader.prototype.parseLogLine = function(index, line) {
       'player': this._currentPlayer,
       'actor': this._currentEmpire.title,
       'verb': CONFIG.VERBS.BATTLE_HAPPENED,
-      'object': LineParser.getEmpires()[1].title,
+      'object': LineParser.getEmpires()[1] ? LineParser.getEmpires()[1].title : LineParser.getEmpires()[0].title,
       'result': getBattleResult(),
       'epoch': this._currentEpoch
 

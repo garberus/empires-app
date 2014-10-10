@@ -5,7 +5,7 @@
         <td class="name">{{player.name}}</td>
         <td class="value"><div class="bar"
                  style="background-color: {{player.color}}; width: {{player.width}}%"></div>
-            {{player.value}}</td>
+            {{player.value}}<span ng-if="player.percent"> ({{player.percent}}%)</span></td>
     </tr>
     </tbody>
 </table>

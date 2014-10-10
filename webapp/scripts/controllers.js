@@ -3,7 +3,9 @@
 /* Controllers */
 
 angular.module('EmpiresApp.controllers', [])
-  .controller('MainController', ['$scope', '$rootScope', function($scope, $root) {
-    console.log('(MainController)', 'this controller runs');
-    $root.gp = 5;
+  .controller('MainController', ['$scope', '$rootScope', 'dataService',
+    function($scope, $root, dataService) {
+      dataService.getGameData('games_played', function(p) {
+        $root.gp = p || 0;
+      });
 }]);
