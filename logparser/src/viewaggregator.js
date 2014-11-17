@@ -53,7 +53,7 @@ ViewAggregator.prototype.processGameData = function(id, data, cb) {
     return;
   }
 
-  data.forEach(function(action) {
+  data.forEach(function(action, index) {
 
     if (action.verb === CONFIG.VERBS.FINAL_SCORE) {
 

@@ -15,6 +15,11 @@ module.exports = function(grunt) {
       dist_dir: './dist',
       app_dir: './webapp'
     },
+    exec: {
+      aggregate: {
+        cmd: 'node logparser/aggregate.js'
+      }
+    },
     // Make sure code styles are up to par and there are no obvious mistakes
     jshint: {
       options: {
@@ -152,6 +157,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('build', [
+    'exec:aggregate',
     'clean',
     //'jshint',
     'useminPrepare',

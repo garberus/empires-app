@@ -40,7 +40,7 @@ directives.directive('formchart', ['dataService',
           var gp = formData[0].form.length;
 
           var y = d3.scale.linear().domain([215, 130]).range([0, h]);
-          var x = d3.scale.linear().domain([0.8, 5.1]).range([0, w]);
+          var x = d3.scale.linear().domain([gp - CONST.X_TICKS + 0.8, gp + 0.1]).range([0, w]);
 
           var lineFunction = d3.svg.line()
             .x(function(d) { return x(d.x); })
@@ -59,7 +59,7 @@ directives.directive('formchart', ['dataService',
             });
 
           var xAxis = d3.svg.axis().scale(x).ticks(CONST.X_TICKS).tickFormat(function(d) {
-            return CONST.X_LABEL + ' ' + (d - CONST.X_TICKS + gp);
+            return CONST.X_LABEL + ' ' + d;
           });
           var yAxis = d3.svg.axis().scale(y).ticks(10).tickSize(w).orient('right');
 
@@ -85,14 +85,15 @@ directives.directive('formchart', ['dataService',
           var group = null;
 
           formData.forEach(function(player) {
+            var slice = player.form.slice(player.form.length-5,player.form.length);
             group = svgContainer.append('g');
             group.append('path')
-              .attr('d', lineFunction(player.form))
+              .attr('d', lineFunction(slice))
               .attr('stroke', player.color)
               .attr('stroke-width', 2)
               .attr('fill', 'none');
             group.selectAll('circle')
-              .data(player.form)
+              .data(slice)
               .enter()
               .append('circle')
               .attr('cx', function(d) { return x(d.x); })

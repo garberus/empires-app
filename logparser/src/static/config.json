@@ -7,6 +7,8 @@
     "PLAYED_EMPIRE" : 2,
     "PLAYED_CARD" : 3,
     "FINAL_SCORE": 4,
-    "BATTLE_HAPPENED": 5
+    "BATTLE_HAPPENED": 5,
+    "KEPT_EMPIRE": 6,
+    "TRADED_EMPIRE": 7
   }
 }

@@ -21,7 +21,9 @@ var TESTS = {
   'BATTLE': new RegExp('defeated'), // both defeated and was defeated is a battle
   'BATTLE_WON': new RegExp('defeated the'),
   'OCCUPY': new RegExp('occupied'),
-  'DESTROYED': new RegExp('destroyed each other')
+  'DESTROYED': new RegExp('destroyed each other'),
+  'KEPT_EMPIRE': new RegExp('and kept it'),
+  'GAVE_EMPIRE': new RegExp('and gave it')
 };
 
 /**
