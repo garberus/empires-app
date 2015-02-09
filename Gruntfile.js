@@ -156,6 +156,11 @@ module.exports = function(grunt) {
     }
   });
 
+  grunt.registerTask('js', [
+    'ngmin',
+    'uglify'
+  ]);
+
   grunt.registerTask('build', [
     'exec:aggregate',
     'clean',

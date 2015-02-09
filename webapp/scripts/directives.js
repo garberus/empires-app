@@ -39,7 +39,7 @@ directives.directive('formchart', ['dataService',
 
           var gp = formData[0].form.length;
 
-          var y = d3.scale.linear().domain([215, 130]).range([0, h]);
+          var y = d3.scale.linear().domain([215, 120]).range([0, h]);
           var x = d3.scale.linear().domain([gp - CONST.X_TICKS + 0.8, gp + 0.1]).range([0, w]);
 
           var lineFunction = d3.svg.line()
@@ -85,7 +85,7 @@ directives.directive('formchart', ['dataService',
           var group = null;
 
           formData.forEach(function(player) {
-            var slice = player.form.slice(player.form.length-5,player.form.length);
+            var slice = player.form.reverse();
             group = svgContainer.append('g');
             group.append('path')
               .attr('d', lineFunction(slice))
@@ -223,7 +223,7 @@ directives.directive('barchart', ['dataService',
         };
 
         $scope._calculateBarWidth = function calculateBarWidth(value, t) {
-          return Math.round(value/t*100) - 20;
+          return Math.round(value/t*(100-20));
         };
 
         $scope._calculateBarMaxValue = function calculateBarWidth(scores) {
