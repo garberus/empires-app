@@ -83,7 +83,7 @@ var _readFile = function _readFile(file) {
 
     _filesRead++;
 
-    if (_filesRead === (_filesToRead - 1)) {
+    if (_filesRead === _filesToRead) {
       _combineData();
     }
 

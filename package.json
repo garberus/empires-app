@@ -1,6 +1,6 @@
 {
   "name": "empires-app-logparser",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Parses text logs from gamesbyemail",
   "main": "logparser/parse.js",
   "scripts": {

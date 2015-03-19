@@ -148,7 +148,7 @@ module.exports = function(grunt) {
         files: [{
           expand: true,
           cwd: '<%= config.app_dir %>/data/',
-          dest: '<%= config.dist_dir %>/data',
+          dest: '<%= config.dist_dir %>/data/',
           src: 'gamedata.json',
           filter: 'isFile'
         }]
