@@ -30,6 +30,9 @@ bower_components
 
 # Output directory
 logparser/output
+
+logparser/data
 webapp/data
 dist
 .tmp
+.DS_Store

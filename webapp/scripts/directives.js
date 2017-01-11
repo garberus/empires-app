@@ -12,6 +12,7 @@ var CONST = {
 
 var BARCHART_TYPE = {
   MOST_WINS: 'wins',
+  MOST_PLAYED: 'played',
   MOST_POINTS: 'points',
   MOST_POINTS_IN_A_GAME: 'game',
   MOST_BATTLES_WON: 'battles'
@@ -147,7 +148,33 @@ directives.directive('barchart', ['dataService',
               for (; i < l; i++) {
                 data[i].width =
                     $scope._calculateBarWidth(parseInt(data[i].wins), max);
-                data[i].value = data[i].wins;
+                data[i].value = data[i].wins + ' (' + Math.round((data[i].wins/data[i].games)*100) + '%)';
+              }
+              $scope.scores = data;
+            }
+
+          });
+
+        };
+
+        $scope.renderPlayedBarchart = function renderPlayedBarchart() {
+
+          $scope.heading = 'Most games played';
+
+          dataService.getGameData('most_wins', function(data) {
+
+            if (data) {
+
+              data.sort(function(a, b) {
+                return a.games < b.games;
+              });
+
+              var max = $scope._calculatePlayedBarMaxValue(data);
+              var i = 0, l = data.length;
+              for (; i < l; i++) {
+                data[i].width =
+                  $scope._calculateBarWidth(parseInt(data[i].games), max);
+                data[i].value = data[i].games;
               }
               $scope.scores = data;
             }
@@ -158,7 +185,7 @@ directives.directive('barchart', ['dataService',
 
         $scope.renderPointsBarchart = function renderPointsBarchart() {
 
-          $scope.heading = 'Most points';
+          $scope.heading = 'Most accumulated points';
 
           dataService.getGameData('most_points', function(data) {
 
@@ -234,6 +261,14 @@ directives.directive('barchart', ['dataService',
           return max;
         };
 
+        $scope._calculatePlayedBarMaxValue = function calculatePlayedBarMaxValue(scores) {
+          var i = 0, l = scores.length, max = 0;
+          for (; i < l; i++) {
+            max = parseInt(scores[i].games) > max ? parseInt(scores[i].games) : max;
+          }
+          return max;
+        };
+
       },
 
       link: function($scope, iElement, iAttrs) {
@@ -241,7 +276,11 @@ directives.directive('barchart', ['dataService',
         switch(iAttrs.ngType) {
 
           case BARCHART_TYPE.MOST_WINS:
-              $scope.renderWinsBarchart();
+            $scope.renderWinsBarchart();
+            break;
+
+          case BARCHART_TYPE.MOST_PLAYED:
+            $scope.renderPlayedBarchart();
             break;
 
           case BARCHART_TYPE.MOST_POINTS:

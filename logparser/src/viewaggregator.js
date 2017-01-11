@@ -183,10 +183,23 @@ ViewAggregator.prototype.getTotalWins = function() {
 
   var _this = this;
   var wins = {};
+  var games = {};
 
   PLAYERS.forEach(function(player) {
 
     _this._gameReports.forEach(function(game) {
+
+      if (_this._playerInGame(player.name, game)) {
+        /**
+         * Add a game for this player
+         */
+        if (games[player.name]) {
+          games[player.name]++;
+        } else {
+          games[player.name] = 1;
+        }
+
+      }
 
       if (game.scores[0].name === player.name) {
         /**
@@ -207,7 +220,12 @@ ViewAggregator.prototype.getTotalWins = function() {
   var winners = [];
 
   for (var player in wins) {
-    winners.push({name: player, wins: wins[player], color: _this.getPlayerColor(player)});
+    winners.push({
+      name: player,
+      wins: wins[player],
+      games: games[player],
+      color: _this.getPlayerColor(player)
+    });
   }
 
   return winners.sort(function(a, b) {
@@ -390,6 +408,24 @@ ViewAggregator.prototype._playerInArray = function(name, arr) {
   });
 
   return found;
+};
+
+/**
+ * Finds a given player name in a game.
+ * @param {string} name The player name.
+ * @param {Array} game The gamedata to look through.
+ * @returns {boolean} Whether the player was found or not.
+ * @private
+ */
+ViewAggregator.prototype._playerInGame = function(name, game) {
+
+  var found = -1;
+
+  game.scores.forEach(function(obj, index) {
+    if (obj.name === name) found = index;
+  });
+
+  return (found > -1);
 };
 
 exports.ViewAggregator = new ViewAggregator();

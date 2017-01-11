@@ -47,6 +47,8 @@ fs.readdir(__dirname + '/' + CONFIG.OUTPUT_DIR, function(err, files) {
   console.log('Directory ' + __dirname + '/' + CONFIG.OUTPUT_DIR +
     ' contains ' + _filesToRead + ' files.');
 
+  files.sort();
+
   files.forEach(function(file) {
 
     console.log('Reading ' + file);
